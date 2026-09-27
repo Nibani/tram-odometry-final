@@ -4,19 +4,19 @@
 
 ## 1. ROS-пакеты, собираемые через colcon в ROS 2 Humble
 
-[Исходники пакетов](https://github.com/Nibani/tram-odometry-final/tree/main/src)
+[Исходники пакетов](https://github.com/Nibani/tram-odometry-final/tree/v0.6.0/src)
 
 Решение содержит пакеты `reserve_odometry` и `tram_vehicle_msgs`, написано на C++17 и собирается командой `colcon build` в ROS 2 Humble. Используются скорости передней и задней тележек, положение контроллера и разрешённые GNSS-фиксации двух антенн. Выходы: `/result/velocity` типа `VelocitySensor` в м/с и `/result/position` типа `Odometry` с XYZ точки `base_link` в системе карты. Эталонный топик алгоритм не читает. Карты и веса включены в репозиторий.
 
 ## 2. Инструкция по запуску и проверке для жюри
 
-[Инструкция жюри](https://github.com/Nibani/tram-odometry-final/blob/main/docs/JURY_RUNBOOK_RU.md)
+[Инструкция жюри](https://github.com/Nibani/tram-odometry-final/blob/v0.6.0/docs/JURY_RUNBOOK_RU.md)
 
 Документ содержит зависимости, сборку и тесты, запуск узла и `ros2 bag play --clock`, входные и выходные топики, запись результатов и команды официального чекера. Полный DDS-прогон сохраняет ошибки, покрытие, частоту, задержку от команды до результата, потребление ресурсов и лог узла. Для проверки скорости работы используется темп воспроизведения 1×; ускоренный прогон отмечается отдельно.
 
 ## 3. Математическая модель
 
-[Уравнения и реализация](https://github.com/Nibani/tram-odometry-final/blob/main/docs/MODEL_RU.md)
+[Уравнения и реализация](https://github.com/Nibani/tram-odometry-final/blob/v0.6.0/docs/MODEL_RU.md)
 
 Физическая основа продольного движения:
 
@@ -38,7 +38,7 @@ v_pred = max(0, v_previous + a · dt).
 
 ## 4. Допущения и настраиваемые параметры
 
-[Допущения и параметры](https://github.com/Nibani/tram-odometry-final/blob/main/docs/PARAMETERS_RU.md)
+[Допущения и параметры](https://github.com/Nibani/tram-odometry-final/blob/v0.6.0/docs/PARAMETERS_RU.md)
 
 Приняты движение вперёд, постоянная геометрия кузова и нулевой крен. Для исходного колёсного потока используется делитель 3,6, для скорости — фиксированная TRAIN-калибровка. В штатном запуске выбирается карта по начальному GNSS, выход приводится к координатам Pathgraph. Преобразование координат рассчитано на TRAIN; явный EPSG организаторами не указан.
 
@@ -46,7 +46,7 @@ v_pred = max(0, v_previous + a · dt).
 
 ## 5. Точность и быстродействие
 
-[Методика, таблицы и графики](https://github.com/Nibani/tram-odometry-final/blob/main/docs/ACCURACY_RU.md)
+[Методика, таблицы и графики](https://github.com/Nibani/tram-odometry-final/blob/v0.6.0/docs/ACCURACY_RU.md)
 
 Численные результаты и сведения о проверенной сборке приведены в [отчёте о точности](ACCURACY_RU.md).
 
@@ -54,7 +54,7 @@ v_pred = max(0, v_previous + a · dt).
 
 ## 6. Ограничения и дальнейшее развитие
 
-[Ограничения](https://github.com/Nibani/tram-odometry-final/blob/main/docs/LIMITATIONS_RU.md)
+[Ограничения](https://github.com/Nibani/tram-odometry-final/blob/v0.6.0/docs/LIMITATIONS_RU.md)
 
 Одновременное согласованное проскальзывание двух тележек может остаться незамеченным. При длительном отсутствии надёжных колёсных измерений и GNSS ошибка прогноза накапливается. Восстановленные конечные кольца приближённые; неточность их геометрии влияет на положение и ориентацию. Начальная привязка зависит от пригодности GNSS-пары, а эвристические ковариации не являются откалиброванными доверительными интервалами.
 

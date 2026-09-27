@@ -9,7 +9,7 @@
 ```bash
 git clone https://github.com/Nibani/tram-odometry-final.git
 cd tram-odometry-final
-git checkout main
+git checkout v0.6.0
 source /opt/ros/humble/setup.bash
 colcon build --executor sequential --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
 source install/setup.bash
@@ -104,7 +104,7 @@ python3 scripts/make_checker_fixture.py --decoded results/decoded --out tests/fi
 python3 tests/ros_checker_replay.py --fixture tests/fixtures/checker_sample.npz --out results/jury_replay --rate 1 --wall-timeout 1450
 ```
 
-Сценарий воспроизводит подготовленный числовой пример через ROS и запускает официальный чекер. Файл `tests/fixtures/checker_sample.npz` не включён в публичный выпуск: его можно получить из своего исходного bag приведёнными командами. Без него полный прогон в публичном CI пропускается; сборка, native и синтетические DDS-проверки выполняются. Для полного прогона при темпе 1× требуется около 22 минут. Без `--rate 1` скрипт по умолчанию использует ускоренный режим 4×; его результаты быстродействия нужно подписывать отдельно.
+Сценарий воспроизводит подготовленный числовой пример через ROS и запускает официальный чекер. Файл `tests/fixtures/checker_sample.npz` не включён в публичный выпуск: его можно получить из своего исходного bag приведёнными командами. Без него полный прогон в публичном CI пропускается; сборка, native и синтетические DDS-проверки остаются в workflow. Исходный пример организаторов занимает около 22 минут при темпе 1×; для другой записи увеличьте `--wall-timeout` с учётом её длительности. Без `--rate 1` скрипт по умолчанию использует ускоренный режим 4×; его результаты быстродействия нужно подписывать отдельно.
 
 | Файл | Что проверить |
 |---|---|
@@ -114,7 +114,7 @@ python3 tests/ros_checker_replay.py --fixture tests/fixtures/checker_sample.npz 
 
 RMSE и максимум ошибки скорости измеряются в м/с, позиции — в метрах по XYZ. Для производительности нужны частота, p99 и максимум задержки, RSS и загрузка CPU с указанными условиями измерения. Требования задания: не менее 10 Гц, предпочтительно 20–50 Гц, задержка до 100 мс и пиковая до 250 мс, не более двух ядер и 0,5 ГБ памяти.
 
-[Измеренные результаты, таблицы и графики](ACCURACY_RU.md) · [CI для проверенной версии](https://github.com/Nibani/tram-odometry-final/actions?query=branch%3Amain)
+[Измеренные результаты, таблицы и графики](ACCURACY_RU.md) · [CI для проверенной версии](https://github.com/Nibani/tram-odometry-final/actions/runs/36347596826)
 
 ## 6. Дополнительные проверки и режимы
 

@@ -1,0 +1,10 @@
+{
+  "private_build_commit": "9b0adfe23d6d406398d92fe355d94d485c9e0b8a",
+  "source_tree": "052e3b0404be27d51ac91969c8c0378582ff46cd",
+  "measurement_scope": "ros_fullmap.py: 8 second synthetic input on full installed maps, wall-clock DDS, two CPU affinity. Full source and src-only builds and native tests passed. Whole job failed later because synthetic mode fixture supplied an integer array instead of double array; fixture fixed in public commit6a79b7f. No runtime code changed.",
+  "full_organizer_replay": "NOT COMPLETED for release; do not substitute historical measurements",
+  "public_ci": "https://github.com/Nibani/tram-odometry-final/actions/runs/36347596826",
+  "public_test_commit": "6a79b7f4ebc3b6c957283b9d37a4d847b708b87b",
+  "public_ci_conclusion": "success",
+  "public_scope": "Full and src-only builds, native tests, synthetic DDS, mode visibility, checker compatibility, late pairing and startup clock. Organizer fixture absent; full organizer replay skipped."
+}

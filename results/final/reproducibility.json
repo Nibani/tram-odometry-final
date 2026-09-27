@@ -1,0 +1,5 @@
+{
+  "documented_offline_replay": "byte-exact match",
+  "prediction_sha256": "4fc8db3e9bd17d8acddf45d618c305c105aabe07cc6009b90f1a1a133912bcb2",
+  "fixture_builder": "accepted by ros_checker_replay --inspect-fixture-only; no data published"
+}

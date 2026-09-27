@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "synthetic_only": true,
+  "reference_topic_used": false,
+  "input_schedule": "5m/s,20Hz,8seconds; no GNSS first4s; paired goodfixes4.0 through6.9s at10Hz",
+  "command": [
+    "ros2",
+    "run",
+    "reserve_odometry",
+    "reserve_odometry_node",
+    "--ros-args",
+    "-r",
+    "__node:=checker_compat_late_recovery",
+    "-p",
+    "use_sim_time:=true",
+    "-p",
+    "route_files:=[\"/__w/tram-odometry-final/tram-odometry-final/results/ci_late_pair/synthetic_line.csv\"]",
+    "-p",
+    "closed_route:=false",
+    "-p",
+    "initial_gnss_seconds:=3.0",
+    "-p",
+    "wheel_divisor:=3.6",
+    "-p",
+    "speed_scale:=1.0",
+    "-p",
+    "map_output:=true",
+    "-p",
+    "map_rotation_yaw:=-0.023073775662649332",
+    "-p",
+    "map_translation:=[101281.45326170324, 85499.06949541977, 169.99250112111588]",
+    "-p",
+    "body_velocity_output:=false",
+    "-p",
+    "publish_relative_position:=false",
+    "-p",
+    "sparse_gnss_correction:=true",
+    "-p",
+    "gnss_correction_gain:=0.25",
+    "-p",
+    "gnss_max_step:=5.0",
+    "-p",
+    "gnss_innovation_gate:=30.0",
+    "-p",
+    "gnss_residual_gate:=8.0",
+    "-p",
+    "gnss_max_age:=1.0",
+    "-p",
+    "align_initial_position:=false",
+    "-p",
+    "compensate_velocity_lever_arm:=false",
+    "-p",
+    "allow_degraded_initialization:=false",
+    "-p",
+    "output_point_x:=0.0",
+    "-p",
+    "output_point_z:=0.0",
+    "-p",
+    "frame_id:=\"map\"",
+    "-p",
+    "child_frame_id:=\"base_link\"",
+    "-p",
+    "origin_lat:=55.805",
+    "-p",
+    "origin_lon:=37.425",
+    "-p",
+    "origin_alt:=170.0",
+    "-p",
+    "gnss_xy_residual_correction:=true",
+    "-r",
+    "/vehicle/front_bogie_velocity:=/compat/input/front",
+    "-r",
+    "/vehicle/rear_bogie_velocity:=/compat/input/rear",
+    "-r",
+    "/vehicle/driver_position_cmd:=/compat/input/command",
+    "-r",
+    "/sensing/gnss/master/fix:=/compat/late_recovery/master",
+    "-r",
+    "/sensing/gnss/rover/fix:=/compat/late_recovery/rover",
+    "-r",
+    "/result/velocity:=/compat/late_recovery/velocity",
+    "-r",
+    "/result/position:=/compat/late_recovery/position",
+    "-r",
+    "/result/diagnostics:=/compat/late_recovery/diagnostics",
+    "-r",
+    "/result/slip_status:=/compat/late_recovery/slip_status"
+  ],
+  "assertions": [
+    {
+      "name": "DDS_discovery",
+      "pass": true,
+      "evidence": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "name": "velocity_all_epochs_continues",
+      "pass": true,
+      "evidence": {
+        "count": 160,
+        "first_s": 0.0,
+        "last_s": 7.95
+      }
+    },
+    {
+      "name": "velocity_exact_5mps_before_and_after",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "velocity_strict_monotonic_stamps",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "no_absolute_positions_before_first_fix",
+      "pass": true,
+      "evidence": {
+        "count": 80,
+        "first_s": 4.0
+      }
+    },
+    {
+      "name": "late_pair_recovers_by_7p2s",
+      "pass": true,
+      "evidence": 4.0
+    },
+    {
+      "name": "absolute_recovery_continues_after_fixes_end",
+      "pass": true,
+      "evidence": 16
+    },
+    {
+      "name": "all_positions_map_base_link",
+      "pass": true,
+      "evidence": 80
+    },
+    {
+      "name": "position_strict_monotonic_stamps",
+      "pass": true,
+      "evidence": 80
+    },
+    {
+      "name": "recovery_pose_uses_current_epoch_not_reset_time",
+      "pass": true,
+      "evidence": {
+        "count": 80,
+        "max_error_m": 1.849514543095132e-10
+      }
+    },
+    {
+      "name": "integrated_distance_never_restarts",
+      "pass": true,
+      "evidence": [
+        4.75,
+        9.75,
+        14.75,
+        19.75,
+        24.75,
+        29.75,
+        34.75,
+        39.75
+      ]
+    },
+    {
+      "name": "distance_remains_full_motion_allowing_diagnostic_cadence",
+      "pass": true,
+      "evidence": 39.75
+    }
+  ],
+  "source_sha256": "464734fb97213e822be5fba6ac9c29007a1df2c6e0bd9a91918cfc4f6e26721d",
+  "helper_sha256": "f4705536bd1f91da4495f5639775fde252c0579ca3021d3a17332121679704dc",
+  "calibration_sha256": "de0195e51361f137ae1930062a82a8eb8e7162756b0177fc0e48ce8972c75c40",
+  "coverage": {
+    "velocity": 160,
+    "position": 80,
+    "diagnostics": 8
+  },
+  "elapsed_wall_s": 8.384075516000024
+}

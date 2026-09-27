@@ -1,0 +1,718 @@
+{
+  "status": "PASS",
+  "assertions": [
+    {
+      "name": "DDS_endpoint_discovery",
+      "pass": true,
+      "evidence": {
+        "wheel_subscribers": [
+          4,
+          4
+        ],
+        "clock_subscribers": 4
+      }
+    },
+    {
+      "name": "node_processes_alive",
+      "pass": true,
+      "evidence": [
+        null,
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "name": "active_velocity_coverage",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "active_finite_base_link_velocity",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "active_strict_output_stamps",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "active_no_relative_positions",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "active_no_position_before_GNSS",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "active_position_coverage",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "active_scalar_equals_body_twist_x",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "disabled_velocity_coverage",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "disabled_finite_base_link_velocity",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "disabled_strict_output_stamps",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "disabled_no_relative_positions",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "disabled_no_position_before_GNSS",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "disabled_position_coverage",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "disabled_scalar_equals_body_twist_x",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "no_gnss_velocity_coverage",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "no_gnss_finite_base_link_velocity",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "no_gnss_strict_output_stamps",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "no_gnss_no_relative_positions",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "no_gnss_no_position_before_GNSS",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "no_GNSS_suppresses_all_absolute_positions",
+      "pass": true,
+      "evidence": 0
+    },
+    {
+      "name": "no_GNSS_keeps_finite_wheel_velocity",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "circle_velocity_coverage",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "circle_finite_base_link_velocity",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "circle_strict_output_stamps",
+      "pass": true,
+      "evidence": 160
+    },
+    {
+      "name": "circle_no_relative_positions",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "circle_no_position_before_GNSS",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "circle_position_coverage",
+      "pass": true,
+      "evidence": 152
+    },
+    {
+      "name": "circle_scalar_equals_body_twist_x",
+      "pass": true,
+      "evidence": 0.0
+    },
+    {
+      "name": "active_startup_map_XYZ",
+      "pass": true,
+      "evidence": {
+        "count": 42,
+        "max_m": 1.440423253752409e-10
+      }
+    },
+    {
+      "name": "active_map_rotated_orientation",
+      "pass": true,
+      "evidence": {
+        "count": 42,
+        "max_rad": 0.0
+      }
+    },
+    {
+      "name": "active_unit_orientation_quaternion",
+      "pass": true,
+      "evidence": 2.220446049250313e-16
+    },
+    {
+      "name": "active_world_transform_does_not_rotate_body_twist",
+      "pass": true,
+      "evidence": 42
+    },
+    {
+      "name": "disabled_startup_map_XYZ",
+      "pass": true,
+      "evidence": {
+        "count": 42,
+        "max_m": 1.440423253752409e-10
+      }
+    },
+    {
+      "name": "disabled_map_rotated_orientation",
+      "pass": true,
+      "evidence": {
+        "count": 42,
+        "max_rad": 0.0
+      }
+    },
+    {
+      "name": "disabled_unit_orientation_quaternion",
+      "pass": true,
+      "evidence": 2.220446049250313e-16
+    },
+    {
+      "name": "disabled_world_transform_does_not_rotate_body_twist",
+      "pass": true,
+      "evidence": 42
+    },
+    {
+      "name": "before_sparse_fix_identical",
+      "pass": true,
+      "evidence": {
+        "count": 42,
+        "expected_m": 0.0,
+        "max_error_m": 0.0
+      }
+    },
+    {
+      "name": "isolated_master_corrects_phase",
+      "pass": true,
+      "evidence": {
+        "count": 15,
+        "expected_m": 1.0,
+        "max_error_m": 3.792766101184952e-11
+      }
+    },
+    {
+      "name": "isolated_rover_corrects_phase",
+      "pass": true,
+      "evidence": {
+        "count": 12,
+        "expected_m": -0.25,
+        "max_error_m": 1.148459105593247e-11
+      }
+    },
+    {
+      "name": "future_fix_does_not_jump",
+      "pass": true,
+      "evidence": {
+        "count": 5,
+        "expected_m": -0.25,
+        "max_error_m": 1.1481759987219675e-11
+      }
+    },
+    {
+      "name": "valid_after_future_and_invalid_fixes_stable",
+      "pass": true,
+      "evidence": {
+        "count": 48,
+        "expected_m": -0.1875,
+        "max_error_m": 1.94269850206652e-10
+      }
+    },
+    {
+      "name": "disabled_sparse_GNSS_ignores_all_later_fixes",
+      "pass": true,
+      "evidence": 9.801402766132213e-11
+    },
+    {
+      "name": "exactly_three_valid_sparse_corrections",
+      "pass": true,
+      "evidence": 3.0
+    },
+    {
+      "name": "stale_and_outlier_are_counted_rejected",
+      "pass": true,
+      "evidence": 2.0
+    },
+    {
+      "name": "circle_body_speed_differs_from_scalar_route_speed",
+      "pass": true,
+      "evidence": {
+        "count": 145,
+        "expected_body_x": 4.9101258576028375,
+        "scalar_route_speed": 5.0,
+        "max_error": 1.872273579550665e-05
+      }
+    },
+    {
+      "name": "circle_map_XYZ_including_periodic_seam",
+      "pass": true,
+      "evidence": 1.7484639683272468e-06
+    },
+    {
+      "name": "circle_map_attitude_including_periodic_seam",
+      "pass": true,
+      "evidence": 2.210199382035633e-07
+    }
+  ],
+  "events": [
+    {
+      "name": "isolated_master",
+      "at_seconds": 3.0,
+      "channel": "master",
+      "along_shift_m": 4.0,
+      "header_delta_s": 0.0,
+      "status": 0
+    },
+    {
+      "name": "isolated_rover",
+      "at_seconds": 4.2,
+      "channel": "rover",
+      "along_shift_m": -4.0,
+      "header_delta_s": 0.0,
+      "status": 0
+    },
+    {
+      "name": "future_rejected",
+      "at_seconds": 5.0,
+      "channel": "master",
+      "along_shift_m": 20.0,
+      "header_delta_s": 2.0,
+      "status": 0
+    },
+    {
+      "name": "valid_after_future",
+      "at_seconds": 5.4,
+      "channel": "master",
+      "along_shift_m": 0.0,
+      "header_delta_s": 0.0,
+      "status": 0
+    },
+    {
+      "name": "stale_rejected",
+      "at_seconds": 5.6000000000000005,
+      "channel": "rover",
+      "along_shift_m": 20.0,
+      "header_delta_s": -1.1,
+      "status": 0
+    },
+    {
+      "name": "outlier_rejected",
+      "at_seconds": 6.0,
+      "channel": "master",
+      "along_shift_m": 100.0,
+      "header_delta_s": 0.0,
+      "status": 0
+    },
+    {
+      "name": "invalid_status_rejected",
+      "at_seconds": 6.4,
+      "channel": "rover",
+      "along_shift_m": 20.0,
+      "header_delta_s": 0.0,
+      "status": -1
+    },
+    {
+      "name": "duplicate_rejected",
+      "at_seconds": 6.800000000000001,
+      "channel": "master",
+      "along_shift_m": 10.0,
+      "header_delta_s": -0.8,
+      "status": 0
+    }
+  ],
+  "calibration_sha256": "de0195e51361f137ae1930062a82a8eb8e7162756b0177fc0e48ce8972c75c40",
+  "coverage": {
+    "active": {
+      "velocity": 160,
+      "position": 152,
+      "diagnostics": 8
+    },
+    "disabled": {
+      "velocity": 160,
+      "position": 152,
+      "diagnostics": 8
+    },
+    "no_gnss": {
+      "velocity": 160,
+      "position": 0,
+      "diagnostics": 8
+    },
+    "circle": {
+      "velocity": 160,
+      "position": 152,
+      "diagnostics": 8
+    }
+  },
+  "commands": {
+    "active": [
+      "ros2",
+      "run",
+      "reserve_odometry",
+      "reserve_odometry_node",
+      "--ros-args",
+      "-r",
+      "__node:=checker_compat_active",
+      "-p",
+      "use_sim_time:=true",
+      "-p",
+      "route_files:=[\"/tmp/checker_compat_tm6ndrw3/line.csv\"]",
+      "-p",
+      "closed_route:=false",
+      "-p",
+      "initial_gnss_seconds:=2.0",
+      "-p",
+      "wheel_divisor:=3.6",
+      "-p",
+      "speed_scale:=1.0",
+      "-p",
+      "map_output:=true",
+      "-p",
+      "map_rotation_yaw:=-0.023073775662649332",
+      "-p",
+      "map_translation:=[101281.45326170324, 85499.06949541977, 169.99250112111588]",
+      "-p",
+      "body_velocity_output:=true",
+      "-p",
+      "publish_relative_position:=false",
+      "-p",
+      "sparse_gnss_correction:=true",
+      "-p",
+      "gnss_correction_gain:=0.25",
+      "-p",
+      "gnss_max_step:=5.0",
+      "-p",
+      "gnss_innovation_gate:=30.0",
+      "-p",
+      "gnss_residual_gate:=8.0",
+      "-p",
+      "gnss_max_age:=1.0",
+      "-p",
+      "align_initial_position:=false",
+      "-p",
+      "compensate_velocity_lever_arm:=false",
+      "-p",
+      "allow_degraded_initialization:=false",
+      "-p",
+      "output_point_x:=0.0",
+      "-p",
+      "output_point_z:=0.0",
+      "-p",
+      "frame_id:=\"map\"",
+      "-p",
+      "child_frame_id:=\"base_link\"",
+      "-p",
+      "origin_lat:=55.805",
+      "-p",
+      "origin_lon:=37.425",
+      "-p",
+      "origin_alt:=170.0",
+      "-r",
+      "/vehicle/front_bogie_velocity:=/compat/input/front",
+      "-r",
+      "/vehicle/rear_bogie_velocity:=/compat/input/rear",
+      "-r",
+      "/vehicle/driver_position_cmd:=/compat/input/command",
+      "-r",
+      "/sensing/gnss/master/fix:=/compat/line/master",
+      "-r",
+      "/sensing/gnss/rover/fix:=/compat/line/rover",
+      "-r",
+      "/result/velocity:=/compat/active/velocity",
+      "-r",
+      "/result/position:=/compat/active/position",
+      "-r",
+      "/result/diagnostics:=/compat/active/diagnostics",
+      "-r",
+      "/result/slip_status:=/compat/active/slip_status"
+    ],
+    "disabled": [
+      "ros2",
+      "run",
+      "reserve_odometry",
+      "reserve_odometry_node",
+      "--ros-args",
+      "-r",
+      "__node:=checker_compat_disabled",
+      "-p",
+      "use_sim_time:=true",
+      "-p",
+      "route_files:=[\"/tmp/checker_compat_tm6ndrw3/line.csv\"]",
+      "-p",
+      "closed_route:=false",
+      "-p",
+      "initial_gnss_seconds:=2.0",
+      "-p",
+      "wheel_divisor:=3.6",
+      "-p",
+      "speed_scale:=1.0",
+      "-p",
+      "map_output:=true",
+      "-p",
+      "map_rotation_yaw:=-0.023073775662649332",
+      "-p",
+      "map_translation:=[101281.45326170324, 85499.06949541977, 169.99250112111588]",
+      "-p",
+      "body_velocity_output:=true",
+      "-p",
+      "publish_relative_position:=false",
+      "-p",
+      "sparse_gnss_correction:=false",
+      "-p",
+      "gnss_correction_gain:=0.25",
+      "-p",
+      "gnss_max_step:=5.0",
+      "-p",
+      "gnss_innovation_gate:=30.0",
+      "-p",
+      "gnss_residual_gate:=8.0",
+      "-p",
+      "gnss_max_age:=1.0",
+      "-p",
+      "align_initial_position:=false",
+      "-p",
+      "compensate_velocity_lever_arm:=false",
+      "-p",
+      "allow_degraded_initialization:=false",
+      "-p",
+      "output_point_x:=0.0",
+      "-p",
+      "output_point_z:=0.0",
+      "-p",
+      "frame_id:=\"map\"",
+      "-p",
+      "child_frame_id:=\"base_link\"",
+      "-p",
+      "origin_lat:=55.805",
+      "-p",
+      "origin_lon:=37.425",
+      "-p",
+      "origin_alt:=170.0",
+      "-r",
+      "/vehicle/front_bogie_velocity:=/compat/input/front",
+      "-r",
+      "/vehicle/rear_bogie_velocity:=/compat/input/rear",
+      "-r",
+      "/vehicle/driver_position_cmd:=/compat/input/command",
+      "-r",
+      "/sensing/gnss/master/fix:=/compat/line/master",
+      "-r",
+      "/sensing/gnss/rover/fix:=/compat/line/rover",
+      "-r",
+      "/result/velocity:=/compat/disabled/velocity",
+      "-r",
+      "/result/position:=/compat/disabled/position",
+      "-r",
+      "/result/diagnostics:=/compat/disabled/diagnostics",
+      "-r",
+      "/result/slip_status:=/compat/disabled/slip_status"
+    ],
+    "no_gnss": [
+      "ros2",
+      "run",
+      "reserve_odometry",
+      "reserve_odometry_node",
+      "--ros-args",
+      "-r",
+      "__node:=checker_compat_no_gnss",
+      "-p",
+      "use_sim_time:=true",
+      "-p",
+      "route_files:=[\"/tmp/checker_compat_tm6ndrw3/line.csv\"]",
+      "-p",
+      "closed_route:=false",
+      "-p",
+      "initial_gnss_seconds:=2.0",
+      "-p",
+      "wheel_divisor:=3.6",
+      "-p",
+      "speed_scale:=1.0",
+      "-p",
+      "map_output:=true",
+      "-p",
+      "map_rotation_yaw:=-0.023073775662649332",
+      "-p",
+      "map_translation:=[101281.45326170324, 85499.06949541977, 169.99250112111588]",
+      "-p",
+      "body_velocity_output:=true",
+      "-p",
+      "publish_relative_position:=false",
+      "-p",
+      "sparse_gnss_correction:=true",
+      "-p",
+      "gnss_correction_gain:=0.25",
+      "-p",
+      "gnss_max_step:=5.0",
+      "-p",
+      "gnss_innovation_gate:=30.0",
+      "-p",
+      "gnss_residual_gate:=8.0",
+      "-p",
+      "gnss_max_age:=1.0",
+      "-p",
+      "align_initial_position:=false",
+      "-p",
+      "compensate_velocity_lever_arm:=false",
+      "-p",
+      "allow_degraded_initialization:=false",
+      "-p",
+      "output_point_x:=0.0",
+      "-p",
+      "output_point_z:=0.0",
+      "-p",
+      "frame_id:=\"map\"",
+      "-p",
+      "child_frame_id:=\"base_link\"",
+      "-p",
+      "origin_lat:=55.805",
+      "-p",
+      "origin_lon:=37.425",
+      "-p",
+      "origin_alt:=170.0",
+      "-r",
+      "/vehicle/front_bogie_velocity:=/compat/input/front",
+      "-r",
+      "/vehicle/rear_bogie_velocity:=/compat/input/rear",
+      "-r",
+      "/vehicle/driver_position_cmd:=/compat/input/command",
+      "-r",
+      "/sensing/gnss/master/fix:=/compat/no_gnss/master",
+      "-r",
+      "/sensing/gnss/rover/fix:=/compat/no_gnss/rover",
+      "-r",
+      "/result/velocity:=/compat/no_gnss/velocity",
+      "-r",
+      "/result/position:=/compat/no_gnss/position",
+      "-r",
+      "/result/diagnostics:=/compat/no_gnss/diagnostics",
+      "-r",
+      "/result/slip_status:=/compat/no_gnss/slip_status"
+    ],
+    "circle": [
+      "ros2",
+      "run",
+      "reserve_odometry",
+      "reserve_odometry_node",
+      "--ros-args",
+      "-r",
+      "__node:=checker_compat_circle",
+      "-p",
+      "use_sim_time:=true",
+      "-p",
+      "route_files:=[\"/tmp/checker_compat_tm6ndrw3/circle.csv\"]",
+      "-p",
+      "closed_route:=true",
+      "-p",
+      "initial_gnss_seconds:=2.0",
+      "-p",
+      "wheel_divisor:=3.6",
+      "-p",
+      "speed_scale:=1.0",
+      "-p",
+      "map_output:=true",
+      "-p",
+      "map_rotation_yaw:=-0.023073775662649332",
+      "-p",
+      "map_translation:=[101281.45326170324, 85499.06949541977, 169.99250112111588]",
+      "-p",
+      "body_velocity_output:=true",
+      "-p",
+      "publish_relative_position:=false",
+      "-p",
+      "sparse_gnss_correction:=true",
+      "-p",
+      "gnss_correction_gain:=0.25",
+      "-p",
+      "gnss_max_step:=5.0",
+      "-p",
+      "gnss_innovation_gate:=30.0",
+      "-p",
+      "gnss_residual_gate:=8.0",
+      "-p",
+      "gnss_max_age:=1.0",
+      "-p",
+      "align_initial_position:=false",
+      "-p",
+      "compensate_velocity_lever_arm:=false",
+      "-p",
+      "allow_degraded_initialization:=false",
+      "-p",
+      "output_point_x:=0.0",
+      "-p",
+      "output_point_z:=0.0",
+      "-p",
+      "frame_id:=\"map\"",
+      "-p",
+      "child_frame_id:=\"base_link\"",
+      "-p",
+      "origin_lat:=55.805",
+      "-p",
+      "origin_lon:=37.425",
+      "-p",
+      "origin_alt:=170.0",
+      "-r",
+      "/vehicle/front_bogie_velocity:=/compat/input/front",
+      "-r",
+      "/vehicle/rear_bogie_velocity:=/compat/input/rear",
+      "-r",
+      "/vehicle/driver_position_cmd:=/compat/input/command",
+      "-r",
+      "/sensing/gnss/master/fix:=/compat/circle/master",
+      "-r",
+      "/sensing/gnss/rover/fix:=/compat/circle/rover",
+      "-r",
+      "/result/velocity:=/compat/circle/velocity",
+      "-r",
+      "/result/position:=/compat/circle/position",
+      "-r",
+      "/result/diagnostics:=/compat/circle/diagnostics",
+      "-r",
+      "/result/slip_status:=/compat/circle/slip_status"
+    ]
+  },
+  "synthetic_only": true,
+  "kinematic_state_used": false,
+  "ros": "Humble",
+  "elapsed_wall_s": 8.833173561000024,
+  "samples_file": "checker_compat_samples.json"
+}
