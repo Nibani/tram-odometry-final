@@ -33,7 +33,7 @@ def run(args):
     try:
         rclpy.init();node=Node('mode_status_fixture')
         route=args.out/'line.csv';route.write_text('s,x,y,z\n0,0,0,0\n1000,1000,0,0\n')
-        calibration={'enu_to_map_R':[[1,0,0],[0,1,0],[0,0,1]],'enu_to_map_translation':[0,0],'map_z_minus_enu_up':0,'origin_lla':[55.805,37.425,170.]}
+        calibration={'enu_to_map_R':[[1.,0.,0.],[0.,1.,0.],[0.,0.,1.]],'enu_to_map_translation':[0.,0.],'map_z_minus_enu_up':0.,'origin_lla':[55.805,37.425,170.]}
         clock=node.create_publisher(Clock,'/clock',10)
         wheels=[node.create_publisher(VelocitySensor,'/compat/input/'+side,10) for side in ['front','rear']]
         controller=node.create_publisher(DriverControllerCommand,'/compat/input/command',10)
