@@ -1,0 +1,907 @@
+{
+  "map_sources": {
+    "loop": "16c11b14e7d776fe572775b43c0e342b8ec028b8ed19628f1a95a50e2b7f320e",
+    "hairpin": "ebadd38dab45bf746c2cbe7914aa6a428a021ea5be961fcaa3a67c4c6dc881bb"
+  },
+  "fields": {
+    "loop": {
+      "all": {
+        "samples": 44146,
+        "factor_quantiles": [
+          0.8458672102845967,
+          0.9852437342866541,
+          0.9999997174496723,
+          1.0000000000002296,
+          1.0000000000038434,
+          1.0000000000063476
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.043040670839681563,
+          3.402411231021784,
+          9.820743155606108,
+          32.2350303335373
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -24.66734238505992,
+          -2.234426739203661,
+          0.02500497075582833,
+          1.819193770140117,
+          2.239064203398523,
+          17.726862572625446
+        ],
+        "body_pitch_deg_quantiles": [
+          -13.71373601014607,
+          -2.2143493808633163,
+          0.02500497075949941,
+          1.7616248602777345,
+          2.2125838345436075,
+          16.988410354230908
+        ],
+        "vertical_factor_quantiles": [
+          -0.5164789412133451,
+          -0.02159968108539407,
+          -1.8456129636731933e-14,
+          0.002555615151142091,
+          0.015507151693281224,
+          0.27666799572990397
+        ],
+        "angle_over15_deg": 78,
+        "angle_over30_deg": 2,
+        "abs_tangent_pitch_over15_deg": 64,
+        "factor_below_095": 36
+      },
+      "official_central": {
+        "samples": 35270,
+        "factor_quantiles": [
+          0.9917860102750835,
+          0.9977050903211849,
+          0.9999998259835141,
+          1.0000000000000446,
+          1.0000000000038876,
+          1.0000000000063476
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.033792198467290605,
+          1.1871065775894667,
+          3.8824288630843524,
+          7.348732362443725
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -5.118663554039277,
+          -2.190405485958788,
+          -0.0048128813179868155,
+          1.8613973659902565,
+          2.1938548566251437,
+          4.241440536609299
+        ],
+        "body_pitch_deg_quantiles": [
+          -2.266342134840981,
+          -2.1681129273215096,
+          -0.00409229198030085,
+          1.8561454726137556,
+          2.176975720570235,
+          2.276339455699071
+        ],
+        "vertical_factor_quantiles": [
+          -0.1137208151047411,
+          -0.0013541819300961972,
+          2.266013735159611e-10,
+          0.0007755042564612645,
+          0.00802888349246839,
+          0.06492229491086753
+        ],
+        "angle_over15_deg": 0,
+        "angle_over30_deg": 0,
+        "abs_tangent_pitch_over15_deg": 0,
+        "factor_below_095": 0
+      },
+      "official_all": {
+        "samples": 37670,
+        "factor_quantiles": [
+          0.9917860102750835,
+          0.9978312087529413,
+          0.999999792820186,
+          0.9999999999996154,
+          1.0000000000038824,
+          1.0000000000063476
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.03686709725203344,
+          1.1862397331298702,
+          3.7741987422568357,
+          7.348732362443725
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -5.118663554039277,
+          -2.1861886739965777,
+          -0.006875476476381362,
+          1.837419494789688,
+          2.193704769472796,
+          4.241440536609299
+        ],
+        "body_pitch_deg_quantiles": [
+          -2.266342134840981,
+          -2.157356824997594,
+          -0.0037360963586471852,
+          1.8226935635433514,
+          2.1653232890663987,
+          2.276339455699071
+        ],
+        "vertical_factor_quantiles": [
+          -0.11456340598660135,
+          -0.0030222231145072263,
+          -1.3674049739731409e-10,
+          0.0008092416358712269,
+          0.008105265447890232,
+          0.06492229491086753
+        ],
+        "angle_over15_deg": 0,
+        "angle_over30_deg": 0,
+        "abs_tangent_pitch_over15_deg": 0,
+        "factor_below_095": 0
+      },
+      "TRAIN_terminal_extension_and_seams": {
+        "samples": 6476,
+        "factor_quantiles": [
+          0.8458672102845967,
+          0.9629726527391302,
+          0.9999719228579027,
+          1.0000000000002296,
+          1.0000000000009983,
+          1.0000000000026785
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.4267345501453966,
+          11.046210615660339,
+          15.597068658403389,
+          32.2350303335373
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -24.66734238505992,
+          -9.29791252324414,
+          0.0799828903136115,
+          1.5482723654519566,
+          11.758027680422128,
+          17.726862572625446
+        ],
+        "body_pitch_deg_quantiles": [
+          -13.71373601014607,
+          -9.297912521353176,
+          0.0852044346074686,
+          1.4426513252741828,
+          8.020052406748393,
+          16.988410354230908
+        ],
+        "vertical_factor_quantiles": [
+          -0.5164789412133451,
+          -0.11251095091889313,
+          1.2765332541020413e-10,
+          0.01740974147717028,
+          0.12713088051557217,
+          0.27666799572990397
+        ],
+        "angle_over15_deg": 78,
+        "angle_over30_deg": 2,
+        "abs_tangent_pitch_over15_deg": 64,
+        "factor_below_095": 36
+      },
+      "lowest_factors": [
+        {
+          "s": 500.75,
+          "segment": 507,
+          "baseline_corresponding_s": 500.75,
+          "factor": 0.8458672102845967,
+          "angle_deg": 32.2350303335373,
+          "tangent_pitch_deg": -23.87053005166038,
+          "body_pitch_deg": 7.308962734363347,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 501.0,
+          "segment": 507,
+          "baseline_corresponding_s": 501.0,
+          "factor": 0.856237844076549,
+          "angle_deg": 31.103243314481336,
+          "tangent_pitch_deg": -23.87053005166044,
+          "body_pitch_deg": 6.2015693773766545,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 501.25,
+          "segment": 507,
+          "baseline_corresponding_s": 501.25,
+          "factor": 0.8662922057706406,
+          "angle_deg": 29.969412601599263,
+          "tangent_pitch_deg": -23.870530051666485,
+          "body_pitch_deg": 5.091862570208781,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 44.25,
+          "segment": 44,
+          "baseline_corresponding_s": 44.25,
+          "factor": 0.8671440220590485,
+          "angle_deg": 29.871566355565392,
+          "tangent_pitch_deg": 0.2368286547158301,
+          "body_pitch_deg": 0.39055901225503814,
+          "official": false,
+          "hairpin_deformed_vertex": true
+        },
+        {
+          "s": 501.5,
+          "segment": 508,
+          "baseline_corresponding_s": 501.5,
+          "factor": 0.8701172540308363,
+          "angle_deg": 29.526563026173275,
+          "tangent_pitch_deg": -24.560666150685453,
+          "body_pitch_deg": 3.9762752812623847,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 45.0,
+          "segment": 45,
+          "baseline_corresponding_s": 45.0,
+          "factor": 0.8774116929863175,
+          "angle_deg": 28.653508506221215,
+          "tangent_pitch_deg": 0.29323449825350867,
+          "body_pitch_deg": 0.3404621068586069,
+          "official": false,
+          "hairpin_deformed_vertex": true
+        },
+        {
+          "s": 501.75,
+          "segment": 508,
+          "baseline_corresponding_s": 501.75,
+          "factor": 0.8790396661540438,
+          "angle_deg": 28.473264961469624,
+          "tangent_pitch_deg": -24.667342385012923,
+          "body_pitch_deg": 2.839148829012626,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 44.5,
+          "segment": 44,
+          "baseline_corresponding_s": 44.5,
+          "factor": 0.8795187631984123,
+          "angle_deg": 28.41563349781381,
+          "tangent_pitch_deg": 0.2368286547158301,
+          "body_pitch_deg": 0.3718477953542851,
+          "official": false,
+          "hairpin_deformed_vertex": true
+        }
+      ]
+    },
+    "hairpin": {
+      "all": {
+        "samples": 44181,
+        "factor_quantiles": [
+          0.8408512053834454,
+          0.9857225766166985,
+          0.9999997017719758,
+          0.9999999999996794,
+          1.0000000000038087,
+          1.0000000000092841
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.044096476922014204,
+          3.5360399054762874,
+          9.686824740934393,
+          32.7698857436222
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -24.66734238501922,
+          -2.234426739699519,
+          0.025004970755822614,
+          1.8224163115897167,
+          2.239064203398546,
+          17.726862572625507
+        ],
+        "body_pitch_deg_quantiles": [
+          -13.719146007746888,
+          -2.2151015013473145,
+          0.02500497075929646,
+          1.7609303029060495,
+          2.213209047502086,
+          16.988410355054096
+        ],
+        "vertical_factor_quantiles": [
+          -0.5241173119536563,
+          -0.021538083714529845,
+          -4.973961780646574e-14,
+          0.0025520584500994935,
+          0.015246715800409306,
+          0.27676607112105195
+        ],
+        "angle_over15_deg": 66,
+        "angle_over30_deg": 4,
+        "abs_tangent_pitch_over15_deg": 64,
+        "factor_below_095": 36
+      },
+      "official_central": {
+        "samples": 35270,
+        "factor_quantiles": [
+          0.9912831392668843,
+          0.9976111535733533,
+          0.9999998275886518,
+          0.999999999999143,
+          1.0000000000038587,
+          1.0000000000092841
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.03346305501098039,
+          1.1742051224666314,
+          3.9568549704034273,
+          7.570658618611223
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -5.118663554039277,
+          -2.1904054673463307,
+          -0.0048128813179868155,
+          1.8613973659902565,
+          2.1938548571958094,
+          4.241440536618151
+        ],
+        "body_pitch_deg_quantiles": [
+          -2.2663421338730765,
+          -2.167907247884098,
+          -0.004346649642279647,
+          1.8560747258210168,
+          2.176990620725542,
+          2.276339454730927
+        ],
+        "vertical_factor_quantiles": [
+          -0.11177944231403583,
+          -0.0013383075909809382,
+          2.493283097343424e-10,
+          0.0007682694802678877,
+          0.008023973977161198,
+          0.06381247644231683
+        ],
+        "angle_over15_deg": 0,
+        "angle_over30_deg": 0,
+        "abs_tangent_pitch_over15_deg": 0,
+        "factor_below_095": 0
+      },
+      "official_all": {
+        "samples": 37670,
+        "factor_quantiles": [
+          0.9912831392668843,
+          0.9977442061690901,
+          0.9999997929717082,
+          0.9999999999989433,
+          1.0000000000038627,
+          1.0000000000092841
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.03668671223942985,
+          1.17437048524365,
+          3.8491852377649987,
+          7.570658618611223
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -5.118663554039277,
+          -2.1861886739965777,
+          -0.006875476476381362,
+          1.837419494789688,
+          2.193704769715265,
+          4.241440536618151
+        ],
+        "body_pitch_deg_quantiles": [
+          -2.2663421338730765,
+          -2.1572289280595034,
+          -0.003900761279215459,
+          1.822910075122454,
+          2.165581019322081,
+          2.276339454730927
+        ],
+        "vertical_factor_quantiles": [
+          -0.11268551342640676,
+          -0.00308548430308396,
+          -1.503771204780513e-10,
+          0.0008033547346606067,
+          0.008167667662902632,
+          0.06381247644231683
+        ],
+        "angle_over15_deg": 0,
+        "angle_over30_deg": 0,
+        "abs_tangent_pitch_over15_deg": 0,
+        "factor_below_095": 0
+      },
+      "TRAIN_terminal_extension_and_seams": {
+        "samples": 6511,
+        "factor_quantiles": [
+          0.8408512053834454,
+          0.9659481182325509,
+          0.9999564742818422,
+          1.0000000000002294,
+          1.0000000000008642,
+          1.000000000002417
+        ],
+        "angle_deg_quantiles": [
+          0.0,
+          0.0,
+          0.5344628512466946,
+          10.949770523989265,
+          14.995053402581995,
+          32.7698857436222
+        ],
+        "tangent_pitch_deg_quantiles": [
+          -24.66734238501922,
+          -9.297912546793388,
+          0.07754274493241287,
+          1.5554748797022564,
+          11.567566019388298,
+          17.726862572625507
+        ],
+        "body_pitch_deg_quantiles": [
+          -13.719146007746888,
+          -9.297912521353199,
+          0.08258544181939334,
+          1.442396321986722,
+          7.826865393895465,
+          16.988410355054096
+        ],
+        "vertical_factor_quantiles": [
+          -0.5241173119536563,
+          -0.11363715931922996,
+          1.3196121972924857e-10,
+          0.017090024333277377,
+          0.12853120682611344,
+          0.27676607112105195
+        ],
+        "angle_over15_deg": 66,
+        "angle_over30_deg": 4,
+        "abs_tangent_pitch_over15_deg": 64,
+        "factor_below_095": 36
+      },
+      "lowest_factors": [
+        {
+          "s": 501.0,
+          "segment": 507,
+          "baseline_corresponding_s": 500.6268179208746,
+          "factor": 0.8408512053834454,
+          "angle_deg": 32.7698857436222,
+          "tangent_pitch_deg": -23.870530051666485,
+          "body_pitch_deg": 7.83042500136707,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 501.25,
+          "segment": 507,
+          "baseline_corresponding_s": 500.8768179208746,
+          "factor": 0.851167356723624,
+          "angle_deg": 31.66113456655021,
+          "tangent_pitch_deg": -23.87053005166038,
+          "body_pitch_deg": 6.747476091529271,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 501.5,
+          "segment": 507,
+          "baseline_corresponding_s": 501.1268179208746,
+          "factor": 0.8613777776816107,
+          "angle_deg": 30.528366567749607,
+          "tangent_pitch_deg": -23.870530051700165,
+          "body_pitch_deg": 5.638962543540315,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 44.25,
+          "segment": 44,
+          "baseline_corresponding_s": 44.07711966269227,
+          "factor": 0.8655523275042504,
+          "angle_deg": 30.05416620947384,
+          "tangent_pitch_deg": 0.22705116896536948,
+          "body_pitch_deg": 0.3957191440031762,
+          "official": false,
+          "hairpin_deformed_vertex": true
+        },
+        {
+          "s": 501.75,
+          "segment": 507,
+          "baseline_corresponding_s": 501.3768179208746,
+          "factor": 0.8712709701780508,
+          "angle_deg": 29.393327997209333,
+          "tangent_pitch_deg": -23.870530051666428,
+          "body_pitch_deg": 4.527918011179337,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 502.0,
+          "segment": 508,
+          "baseline_corresponding_s": 501.6268179208746,
+          "factor": 0.8742324100880702,
+          "angle_deg": 29.045738616934717,
+          "tangent_pitch_deg": -24.667342385012923,
+          "body_pitch_deg": 3.3998863519220155,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        },
+        {
+          "s": 44.5,
+          "segment": 44,
+          "baseline_corresponding_s": 44.31679845232225,
+          "factor": 0.8776885786488767,
+          "angle_deg": 28.635217209356476,
+          "tangent_pitch_deg": 0.22705116896536948,
+          "body_pitch_deg": 0.3760742558168289,
+          "official": false,
+          "hairpin_deformed_vertex": true
+        },
+        {
+          "s": 502.25,
+          "segment": 508,
+          "baseline_corresponding_s": 501.8768179208746,
+          "factor": 0.8839045216551465,
+          "angle_deg": 27.88298861867582,
+          "tangent_pitch_deg": -24.66734238501922,
+          "body_pitch_deg": 2.2608998332674335,
+          "official": false,
+          "hairpin_deformed_vertex": false
+        }
+      ]
+    }
+  },
+  "train_central_support": {
+    "loop": {
+      "samples": 20861,
+      "factor_quantiles": [
+        0.9929455927420142,
+        0.9967491621739824,
+        0.99999978369817,
+        0.99999999999851,
+        1.000000000003872,
+        1.0000000000082283
+      ],
+      "angle_deg_quantiles": [
+        0.0,
+        0.0,
+        0.03757221284144386,
+        1.4943285742767345,
+        4.615216151043221,
+        6.809630275923218
+      ],
+      "tangent_pitch_deg_quantiles": [
+        -5.118663554036596,
+        -2.2411279551297176,
+        -0.04798546606829086,
+        1.853865508460125,
+        2.1353938300706297,
+        4.241440536618151
+      ],
+      "body_pitch_deg_quantiles": [
+        -2.266342132354889,
+        -2.2304599846903232,
+        -0.05829764615564889,
+        1.8308814407456944,
+        2.081345023683865,
+        2.276339455646944
+      ],
+      "vertical_factor_quantiles": [
+        -0.10242611214472204,
+        -0.001516054673789016,
+        1.7817535464675904e-06,
+        0.0008546892290279516,
+        0.008834144194018794,
+        0.06198301184643989
+      ],
+      "angle_over15_deg": 0,
+      "angle_over30_deg": 0,
+      "abs_tangent_pitch_over15_deg": 0,
+      "factor_below_095": 0
+    },
+    "hairpin": {
+      "samples": 20861,
+      "factor_quantiles": [
+        0.9929455927420142,
+        0.9967491621739824,
+        0.99999978369817,
+        0.99999999999851,
+        1.000000000003872,
+        1.0000000000082283
+      ],
+      "angle_deg_quantiles": [
+        0.0,
+        0.0,
+        0.03757221284144386,
+        1.4943285742767345,
+        4.615216151043221,
+        6.809630275923218
+      ],
+      "tangent_pitch_deg_quantiles": [
+        -5.118663554036596,
+        -2.2411279551297176,
+        -0.04798546606829086,
+        1.853865508460125,
+        2.1353938300706297,
+        4.241440536618151
+      ],
+      "body_pitch_deg_quantiles": [
+        -2.266342132354889,
+        -2.2304599846903232,
+        -0.05829764615564889,
+        1.8308814407456944,
+        2.081345023683865,
+        2.276339455646944
+      ],
+      "vertical_factor_quantiles": [
+        -0.10242611214472204,
+        -0.001516054673789016,
+        1.7817535464675904e-06,
+        0.0008546892290279516,
+        0.008834144194018794,
+        0.06198301184643989
+      ],
+      "angle_over15_deg": 0,
+      "angle_over30_deg": 0,
+      "abs_tangent_pitch_over15_deg": 0,
+      "factor_below_095": 0
+    }
+  },
+  "quantile_order": [
+    0.0,
+    0.01,
+    0.5,
+    0.95,
+    0.99,
+    1.0
+  ],
+  "hairpin_vertex_changes": 215,
+  "hairpin_Z_identical_to_baseline": true,
+  "thresholds_are_descriptive_not_runtime_gates": true,
+  "TRAIN_support_bags": [
+    {
+      "bag": "30618_0652866c",
+      "samples": 539
+    },
+    {
+      "bag": "30618_073f08d1",
+      "samples": 563
+    },
+    {
+      "bag": "30618_0e41eac3",
+      "samples": 395
+    },
+    {
+      "bag": "30618_0f120b35",
+      "samples": 448
+    },
+    {
+      "bag": "30618_1cc230fa",
+      "samples": 342
+    },
+    {
+      "bag": "30618_21dd3af3",
+      "samples": 547
+    },
+    {
+      "bag": "30618_22c1c589",
+      "samples": 712
+    },
+    {
+      "bag": "30618_2366c74a",
+      "samples": 607
+    },
+    {
+      "bag": "30618_28538acf",
+      "samples": 398
+    },
+    {
+      "bag": "30618_2cb9ce37",
+      "samples": 646
+    },
+    {
+      "bag": "30618_2dbce472",
+      "samples": 333
+    },
+    {
+      "bag": "30618_2f104a1d",
+      "samples": 364
+    },
+    {
+      "bag": "30618_3b36e5cd",
+      "samples": 560
+    },
+    {
+      "bag": "30618_40ffd323",
+      "samples": 657
+    },
+    {
+      "bag": "30618_49fe4c54",
+      "samples": 631
+    },
+    {
+      "bag": "30618_4d487b0d",
+      "samples": 373
+    },
+    {
+      "bag": "30618_616ec56b",
+      "samples": 281
+    },
+    {
+      "bag": "30618_68847170",
+      "samples": 704
+    },
+    {
+      "bag": "30618_68d1748a",
+      "samples": 126
+    },
+    {
+      "bag": "30618_6cb3280a",
+      "samples": 823
+    },
+    {
+      "bag": "30618_748832b9",
+      "samples": 801
+    },
+    {
+      "bag": "30618_76e1f9c7",
+      "samples": 360
+    },
+    {
+      "bag": "30618_7b4d83f4",
+      "samples": 773
+    },
+    {
+      "bag": "30618_8158f0b0",
+      "samples": 413
+    },
+    {
+      "bag": "30618_87afe526",
+      "samples": 368
+    },
+    {
+      "bag": "30618_9c09b081",
+      "samples": 396
+    },
+    {
+      "bag": "30618_ab5921a4",
+      "samples": 422
+    },
+    {
+      "bag": "30618_b15eafc3",
+      "samples": 637
+    },
+    {
+      "bag": "30618_b8044aa0",
+      "samples": 645
+    },
+    {
+      "bag": "30618_b83d854d",
+      "samples": 661
+    },
+    {
+      "bag": "30618_b95ca60a",
+      "samples": 437
+    },
+    {
+      "bag": "30618_e2dcf65f",
+      "samples": 657
+    },
+    {
+      "bag": "30618_e3d94878",
+      "samples": 762
+    },
+    {
+      "bag": "30618_f19a4ac3",
+      "samples": 799
+    },
+    {
+      "bag": "30639_3b3d9eb8",
+      "samples": 319
+    },
+    {
+      "bag": "30639_92226df0",
+      "samples": 779
+    },
+    {
+      "bag": "30639_c31df386",
+      "samples": 522
+    },
+    {
+      "bag": "30639_d601d28f",
+      "samples": 651
+    },
+    {
+      "bag": "30639_dce52be4",
+      "samples": 410
+    }
+  ],
+  "TRAIN_support_policy": "Unchanged previously frozen kinematic central support; not newly selected by this result.",
+  "diagnostic_locations_no_fit": [
+    {
+      "unwrapped_s": 11546.236569995543,
+      "wrapped_s": 501.14941297335463,
+      "segment": 507,
+      "map_delta_xyz": [
+        -0.3265284989997781,
+        -0.8028473539999936,
+        -0.3835394160000001
+      ],
+      "segment_length": 0.9477801528358042,
+      "hairpin_deformed_here": false,
+      "exact_vertex_equal_between_maps": true,
+      "factor": 0.8469701344547134,
+      "angle_deg": 32.11636205099344,
+      "tangent_pitch_deg": -23.870530051655333,
+      "body_pitch_deg": 7.19286717150283,
+      "lateral_factor": 0.1328612754108553,
+      "vertical_factor": -0.5147712820367585,
+      "tangent_norm": 0.999999999985901
+    },
+    {
+      "unwrapped_s": 11089.394672,
+      "wrapped_s": 44.30751497781239,
+      "segment": 44,
+      "map_delta_xyz": [
+        -0.3924703280003996,
+        -0.9177186330000495,
+        0.00395535499999955
+      ],
+      "segment_length": 0.9981262908817686,
+      "hairpin_deformed_here": true,
+      "exact_vertex_equal_between_maps": false,
+      "factor": 0.8683837959615137,
+      "angle_deg": 29.72863408972543,
+      "tangent_pitch_deg": 0.2270511689650613,
+      "body_pitch_deg": 0.3912506547919635,
+      "lateral_factor": 0.49588881162540555,
+      "vertical_factor": -0.0019670758000302265,
+      "tangent_norm": 0.9999999999854939
+    },
+    {
+      "unwrapped_s": 11352.4757095,
+      "wrapped_s": 307.3885524778125,
+      "segment": 314,
+      "map_delta_xyz": [
+        -0.23044060700021873,
+        -1.035585201999993,
+        -0.042555715000000216
+      ],
+      "segment_length": 1.0617676642444696,
+      "hairpin_deformed_here": false,
+      "exact_vertex_equal_between_maps": true,
+      "factor": 0.9570587272247723,
+      "angle_deg": 16.85161640249532,
+      "tangent_pitch_deg": -2.297033736336391,
+      "body_pitch_deg": -0.1882769827433345,
+      "lateral_factor": 0.2875315192872757,
+      "vertical_factor": -0.03693532224863695,
+      "tangent_norm": 0.9999999999851804
+    }
+  ],
+  "analytic_controls": {
+    "constant_radius_factor": {
+      "20": 0.9820251715205676,
+      "50": 0.9971458017762498,
+      "100": 0.9992872147185713
+    },
+    "straight_constant_grade_factor": 1.0,
+    "vertical_only_factor_for_minus23_8705_tangent_plus7_1929_chord": 0.8565968664632161,
+    "yaw_projection_error_and_vertical_slope_are_distinct": true
+  },
+  "elapsed_s": 1.1154057999956422
+}

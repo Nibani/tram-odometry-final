@@ -1,0 +1,820 @@
+{
+  "status": "EXACT_REBUILD_PASS",
+  "training_part": "train",
+  "train_bags_considered": 71,
+  "projected_bags": 45,
+  "central_eligible_bags": [
+    "30618_0652866c",
+    "30618_073f08d1",
+    "30618_0e41eac3",
+    "30618_0f120b35",
+    "30618_1cc230fa",
+    "30618_21dd3af3",
+    "30618_22c1c589",
+    "30618_2366c74a",
+    "30618_28538acf",
+    "30618_2cb9ce37",
+    "30618_2dbce472",
+    "30618_2f104a1d",
+    "30618_3b36e5cd",
+    "30618_40ffd323",
+    "30618_49fe4c54",
+    "30618_4d487b0d",
+    "30618_616ec56b",
+    "30618_68847170",
+    "30618_68d1748a",
+    "30618_6cb3280a",
+    "30618_748832b9",
+    "30618_76e1f9c7",
+    "30618_7b4d83f4",
+    "30618_8158f0b0",
+    "30618_87afe526",
+    "30618_9c09b081",
+    "30618_ab5921a4",
+    "30618_b15eafc3",
+    "30618_b8044aa0",
+    "30618_b83d854d",
+    "30618_b95ca60a",
+    "30618_e2dcf65f",
+    "30618_e3d94878",
+    "30618_f19a4ac3",
+    "30639_3b3d9eb8",
+    "30639_92226df0",
+    "30639_c31df386",
+    "30639_d601d28f",
+    "30639_dce52be4"
+  ],
+  "training_bags": [
+    "30618_0652866c",
+    "30618_073f08d1",
+    "30618_0e41eac3",
+    "30618_0f120b35",
+    "30618_1cc230fa",
+    "30618_22c1c589",
+    "30618_2366c74a",
+    "30618_28538acf",
+    "30618_2cb9ce37",
+    "30618_2dbce472",
+    "30618_2f104a1d",
+    "30618_3b36e5cd",
+    "30618_40ffd323",
+    "30618_49fe4c54",
+    "30618_4d487b0d",
+    "30618_616ec56b",
+    "30618_68847170",
+    "30618_68d1748a",
+    "30618_6cb3280a",
+    "30618_748832b9",
+    "30618_76e1f9c7",
+    "30618_7b4d83f4",
+    "30618_8158f0b0",
+    "30618_87afe526",
+    "30618_9c09b081",
+    "30618_b15eafc3",
+    "30618_b8044aa0",
+    "30618_b83d854d",
+    "30618_b95ca60a",
+    "30618_e3d94878",
+    "30618_f19a4ac3",
+    "30639_3b3d9eb8",
+    "30639_92226df0",
+    "30639_c31df386",
+    "30639_d601d28f",
+    "30639_dce52be4"
+  ],
+  "local_sample_count": 144,
+  "coefficients": [
+    -3.666632814190473,
+    -0.4309155628192265,
+    -3.093973911798623,
+    -1.0843245229744847,
+    -1.576289681535686,
+    10.294372091345211
+  ],
+  "method": "quality&t>=3 sampled every5s, then X17>0.5; native closed Route.project; XY<12, cos>0.98; central>=20 and XYRMSE<2; terminal d430..650; C1 envelope times Legendre degree0..5; equal bag Huber0.5 ridge0.001,30IRLS iterations",
+  "official_ranges_m": [
+    [
+      551.3593682118322,
+      5260.286678058046
+    ],
+    [
+      5781.905803932912,
+      10490.467453783569
+    ]
+  ],
+  "terminal_origin_m": 10490.467453783569,
+  "baseline_map_raw_sha256": "16c11b14e7d776fe572775b43c0e342b8ec028b8ed19628f1a95a50e2b7f320e",
+  "baseline_map_canonical_lf_sha256": "6ee15c70018210cf0e1474fddffd33bb6f460a93bb65bdccae16e7247d984ba0",
+  "split_sha256": "7aa6bde28bbdca14b8cf6bbc0aad2aa3a5f6f8e67fdbac86ec3f901683dfaa29",
+  "projector_sha256": "4de5b32c52e5f2ee1a961e6339b25b3552c2c3a67f45afd6b865d5f1869eb2b6",
+  "builder_sha256": "fc9906f72d9600faf26b943e18a1b3304446bf1044374b2305892296a002a524",
+  "source_training_sha256": {
+    "30618_0652866c": "22b7dcd7139aa45ed1e992f7077243b0d83e903bbb02c2bfa7e663417e9720c1",
+    "30618_073f08d1": "03cb0035fb3bed81d1b401d4549e3953649816b4d5dfe6947ac6c34f303fc9bb",
+    "30618_0e41eac3": "01596e5686b943f7a88c76437b20a3923a637969bddbb97881dd531387d40911",
+    "30618_0f120b35": "e0853b045c37da44aaba83a0fa0e41eec22713d1b1d8359cc1ee746bf35eb7f0",
+    "30618_1cc230fa": "0fdf2c3e42c798d704f59c3f48b889c1c5abe1636163b7f5b9ac0833d8af87ee",
+    "30618_22c1c589": "fe16479c9f11ce3bdaab9910c48306caecba420688701bcba63cc02b37790d15",
+    "30618_2366c74a": "6e8b7e0a8e309abbd6b346d5acbbd4e4d04aa2df04da7467453de00d0bb89470",
+    "30618_28538acf": "c672d08359bd7fc432403be5aa3157cb6c196e4dae5b65e1a64e2a4b8cfbae41",
+    "30618_2cb9ce37": "f978eb341541f06c3e5d0cb48e293beb797dc9fadfdee492bae886b5b6c7905c",
+    "30618_2dbce472": "7875e75e2eb2b12d90878f2695d4b135e6152211f1bdb6b31b98882adc7c705f",
+    "30618_2f104a1d": "a2770d7a927ceac3c8102270deb7c07f747597e702f56dbf2f45e2e0bb7708ba",
+    "30618_3b36e5cd": "c6b7887077c70bbf43b2bbe77507152f8421b7293615370224c606aac6cd6d80",
+    "30618_40ffd323": "aac3c05ca6c428ea8b5913bd717d385b7486f3359afaa3171add9aeaa32f9d34",
+    "30618_49fe4c54": "42431f262548714ae7c1f15fdf1605d9e776d1cbc1efbacd353ff35013e849aa",
+    "30618_4d487b0d": "d68a0ab25402a48352540149926ae4005a2a4eac81d1e949f5d8cd06d346a2a4",
+    "30618_616ec56b": "b3330df01a4314314d4ef80681733e093627297a24f9098e21bfb027143fb6fd",
+    "30618_68847170": "fd0cb7d9dea2cd6420b5c56e7d479eaf3b9ce7229b09e25706a9e14ff8f8f35e",
+    "30618_68d1748a": "e638ce9ce5f6c77f636b67d8b4ec61e25492732f52f142587f116df3a20e197b",
+    "30618_6cb3280a": "10269922b4a107d8f3ebcc04e13d03f463e3736950ff54d86d8024fb94c5b320",
+    "30618_748832b9": "fac743fe65dd6a88da48d53f6086dfe2af66343af49762f02182ae3b0dc9a225",
+    "30618_76e1f9c7": "b2698b972241fd7a7ea3a3513f1a76970fde90e8af480313320c2b98005cf8a9",
+    "30618_7b4d83f4": "47e6058bb142c9b4cba2d47bc9f535e55071446cf59ef96d82d8cddb4d5b6bc5",
+    "30618_8158f0b0": "3c7cb9331296b196165cb3c4bf8f3343eb826e7a43bcc18377b1109fc21e2638",
+    "30618_87afe526": "18701124b81d963695e47df0d838ccff8f61d4b7cecf204e3d8290bc094459e1",
+    "30618_9c09b081": "c1e58ade51f9e3375aad0601f2f457e633e237f8e9bf90e3052df363d843d114",
+    "30618_b15eafc3": "c8c4a9644c73dff516b0d73625fd9163b2f3e2645f857decf39d5ca52718c47a",
+    "30618_b8044aa0": "92bca05cf633ba0b0b305518f9cd735910e749fa9c9fea0d53ff2d97b1cbc93c",
+    "30618_b83d854d": "83dff475b9a25f5c97afc22b4c8ae48b5fdce2394343e8a9061f18e96b938ce1",
+    "30618_b95ca60a": "1ed5b1c83e793c9b982b3a236b3eb2bf19f5625647533bb3b50a78cff3616091",
+    "30618_e3d94878": "057f524825af8a004baf8b41eefe4a595dfaf8da9d478c884c527b60c015f05a",
+    "30618_f19a4ac3": "d9a2e045cdec986f2ca94f7eb9a490292a254739c89f69fb6e72f89afe52ef15",
+    "30639_3b3d9eb8": "f60cebc5e9ed7c71fef9eca7b5058a2c73f41ae12f2eb069e8336352d411e5c5",
+    "30639_92226df0": "44c1e2c5d4b970a5a1f24f4c717d70229779dc4fee56719f38718cef685a151b",
+    "30639_c31df386": "b543dbfb789752f915c64662e2a4152e0822cd7a89e1fc0947afdbeefac7dd2e",
+    "30639_d601d28f": "b66b6ecfadf81f811891178b2567e0fa9de105ad2a893f9c8a2671b442bbdbf9",
+    "30639_dce52be4": "dcf86307e3fe4af971c0d75ece63921812551e144871a74d9b7737a94adb5678"
+  },
+  "candidate_map": {
+    "sha256": "ebadd38dab45bf746c2cbe7914aa6a428a021ea5be961fcaa3a67c4c6dc881bb",
+    "canonical_lf_sha256": "93dfcca102101600d3347f04d968046d062782e59c43f71931a79873d2a4743f",
+    "length_m": 11045.087157022237,
+    "endpoint_gap_m": 0.0,
+    "changed_vertices": 215
+  },
+  "expected_raw_csv_sha256": "ebadd38dab45bf746c2cbe7914aa6a428a021ea5be961fcaa3a67c4c6dc881bb",
+  "format": "ASCII CSV,9 decimal places,explicit CRLF",
+  "seed": "N/A deterministic",
+  "threads": 1,
+  "per_bag": [
+    {
+      "bag": "30618_0259fe53",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_0652866c",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 242,
+      "moving_sample_count": 159,
+      "status": "central_eligible",
+      "central_count": 118,
+      "central_xy_rmse_m": 1.4407059987397894,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30618_073f08d1",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 232,
+      "moving_sample_count": 152,
+      "status": "central_eligible",
+      "central_count": 114,
+      "central_xy_rmse_m": 0.48571762083388953,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_095a115b",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 258,
+      "moving_sample_count": 174,
+      "status": "rejected_central_support",
+      "central_count": 125,
+      "central_xy_rmse_m": 2.0817755852380264
+    },
+    {
+      "bag": "30618_0a83c933",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_0d865417",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 3,
+      "moving_sample_count": 0,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_0e41eac3",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 246,
+      "moving_sample_count": 157,
+      "status": "central_eligible",
+      "central_count": 122,
+      "central_xy_rmse_m": 1.4249715611217522,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30618_0f120b35",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 243,
+      "moving_sample_count": 148,
+      "status": "central_eligible",
+      "central_count": 119,
+      "central_xy_rmse_m": 0.5183049882920511,
+      "local_fit_count": 1
+    },
+    {
+      "bag": "30618_117c2d02",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_1551d0a9",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 1,
+      "moving_sample_count": 0,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_1cc230fa",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 232,
+      "moving_sample_count": 157,
+      "status": "central_eligible",
+      "central_count": 102,
+      "central_xy_rmse_m": 0.48725082491376687,
+      "local_fit_count": 5
+    },
+    {
+      "bag": "30618_20096314",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_2161b58b",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_21dd3af3",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 206,
+      "moving_sample_count": 159,
+      "status": "central_eligible",
+      "central_count": 120,
+      "central_xy_rmse_m": 0.6982260450581157,
+      "local_fit_count": 0
+    },
+    {
+      "bag": "30618_2255aade",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_22c1c589",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 223,
+      "moving_sample_count": 154,
+      "status": "central_eligible",
+      "central_count": 112,
+      "central_xy_rmse_m": 0.48119340604259897,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_2366c74a",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 211,
+      "moving_sample_count": 128,
+      "status": "central_eligible",
+      "central_count": 106,
+      "central_xy_rmse_m": 1.3161542509496231,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_28538acf",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 211,
+      "moving_sample_count": 148,
+      "status": "central_eligible",
+      "central_count": 104,
+      "central_xy_rmse_m": 0.7133199560189797,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_2cb9ce37",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 144,
+      "moving_sample_count": 104,
+      "status": "central_eligible",
+      "central_count": 83,
+      "central_xy_rmse_m": 0.5735470038205138,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_2d2fa7be",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_2dbce472",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 218,
+      "moving_sample_count": 144,
+      "status": "central_eligible",
+      "central_count": 97,
+      "central_xy_rmse_m": 0.9124686647027485,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30618_2f104a1d",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 233,
+      "moving_sample_count": 143,
+      "status": "central_eligible",
+      "central_count": 92,
+      "central_xy_rmse_m": 0.3366048834219492,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_2f2f1175",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_3b36e5cd",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 213,
+      "moving_sample_count": 143,
+      "status": "central_eligible",
+      "central_count": 106,
+      "central_xy_rmse_m": 0.46749594635998476,
+      "local_fit_count": 5
+    },
+    {
+      "bag": "30618_3ba2326f",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_3e012faf",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_40ffd323",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 235,
+      "moving_sample_count": 162,
+      "status": "central_eligible",
+      "central_count": 110,
+      "central_xy_rmse_m": 0.4036059193956294,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_45ff6f99",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 3,
+      "moving_sample_count": 0,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_49fe4c54",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 231,
+      "moving_sample_count": 159,
+      "status": "central_eligible",
+      "central_count": 120,
+      "central_xy_rmse_m": 1.4387830201480054,
+      "local_fit_count": 5
+    },
+    {
+      "bag": "30618_4d487b0d",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 172,
+      "moving_sample_count": 145,
+      "status": "central_eligible",
+      "central_count": 103,
+      "central_xy_rmse_m": 0.41983857038087957,
+      "local_fit_count": 1
+    },
+    {
+      "bag": "30618_4e1e3181",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_5036aa78",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_616ec56b",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 211,
+      "moving_sample_count": 129,
+      "status": "central_eligible",
+      "central_count": 92,
+      "central_xy_rmse_m": 0.7045434516781024,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_6236f680",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_68847170",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 223,
+      "moving_sample_count": 157,
+      "status": "central_eligible",
+      "central_count": 118,
+      "central_xy_rmse_m": 0.5391722926173454,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_68d1748a",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 206,
+      "moving_sample_count": 140,
+      "status": "central_eligible",
+      "central_count": 99,
+      "central_xy_rmse_m": 1.703008686808356,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_6cb3280a",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 217,
+      "moving_sample_count": 142,
+      "status": "central_eligible",
+      "central_count": 107,
+      "central_xy_rmse_m": 0.31439591950532986,
+      "local_fit_count": 1
+    },
+    {
+      "bag": "30618_74559c73",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_748832b9",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 218,
+      "moving_sample_count": 159,
+      "status": "central_eligible",
+      "central_count": 113,
+      "central_xy_rmse_m": 0.5122865423374219,
+      "local_fit_count": 7
+    },
+    {
+      "bag": "30618_76e1f9c7",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 249,
+      "moving_sample_count": 169,
+      "status": "central_eligible",
+      "central_count": 128,
+      "central_xy_rmse_m": 1.4326897365153974,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_79b204dc",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_7a152380",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_7b4d83f4",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 205,
+      "moving_sample_count": 141,
+      "status": "central_eligible",
+      "central_count": 109,
+      "central_xy_rmse_m": 0.49354542411101726,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_8158f0b0",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 219,
+      "moving_sample_count": 158,
+      "status": "central_eligible",
+      "central_count": 115,
+      "central_xy_rmse_m": 1.2684974921691445,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_81c22fee",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_87afe526",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 146,
+      "moving_sample_count": 104,
+      "status": "central_eligible",
+      "central_count": 61,
+      "central_xy_rmse_m": 0.8394132300783532,
+      "local_fit_count": 1
+    },
+    {
+      "bag": "30618_98161270",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 8,
+      "moving_sample_count": 0,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_9bbe6faa",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_9c09b081",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 178,
+      "moving_sample_count": 124,
+      "status": "central_eligible",
+      "central_count": 92,
+      "central_xy_rmse_m": 1.6413625409863035,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30618_ab5921a4",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 183,
+      "moving_sample_count": 147,
+      "status": "central_eligible",
+      "central_count": 103,
+      "central_xy_rmse_m": 1.1907409665640516,
+      "local_fit_count": 0
+    },
+    {
+      "bag": "30618_af7496f0",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 37,
+      "moving_sample_count": 20,
+      "status": "rejected_central_support",
+      "central_count": 0,
+      "central_xy_rmse_m": null
+    },
+    {
+      "bag": "30618_b15eafc3",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 237,
+      "moving_sample_count": 153,
+      "status": "central_eligible",
+      "central_count": 116,
+      "central_xy_rmse_m": 0.6310525826284369,
+      "local_fit_count": 3
+    },
+    {
+      "bag": "30618_b8044aa0",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 248,
+      "moving_sample_count": 160,
+      "status": "central_eligible",
+      "central_count": 117,
+      "central_xy_rmse_m": 0.5120120468574517,
+      "local_fit_count": 7
+    },
+    {
+      "bag": "30618_b83d854d",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 232,
+      "moving_sample_count": 168,
+      "status": "central_eligible",
+      "central_count": 125,
+      "central_xy_rmse_m": 1.2811110157803172,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30618_b95ca60a",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 198,
+      "moving_sample_count": 139,
+      "status": "central_eligible",
+      "central_count": 96,
+      "central_xy_rmse_m": 0.5125323945922677,
+      "local_fit_count": 5
+    },
+    {
+      "bag": "30618_bab2fe58",
+      "part": "train",
+      "date": "2026-08-10",
+      "sampled_quality_count": 11,
+      "moving_sample_count": 9,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_bc5e53c2",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 6,
+      "moving_sample_count": 0,
+      "status": "fewer_than_10_moving_samples"
+    },
+    {
+      "bag": "30618_e151d6e4",
+      "part": "train",
+      "date": "2026-08-10",
+      "status": "no_dual_gnss"
+    },
+    {
+      "bag": "30618_e2dcf65f",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 217,
+      "moving_sample_count": 149,
+      "status": "central_eligible",
+      "central_count": 114,
+      "central_xy_rmse_m": 0.5190379724001436,
+      "local_fit_count": 0
+    },
+    {
+      "bag": "30618_e3d94878",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 233,
+      "moving_sample_count": 161,
+      "status": "central_eligible",
+      "central_count": 117,
+      "central_xy_rmse_m": 0.5001081322838841,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30618_f19a4ac3",
+      "part": "train",
+      "date": "2026-07-27",
+      "sampled_quality_count": 228,
+      "moving_sample_count": 159,
+      "status": "central_eligible",
+      "central_count": 115,
+      "central_xy_rmse_m": 0.939576714952156,
+      "local_fit_count": 2
+    },
+    {
+      "bag": "30639_253671cc",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 209,
+      "moving_sample_count": 162,
+      "status": "rejected_central_support",
+      "central_count": 112,
+      "central_xy_rmse_m": 2.8121381302768165
+    },
+    {
+      "bag": "30639_3b3d9eb8",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 151,
+      "moving_sample_count": 117,
+      "status": "central_eligible",
+      "central_count": 82,
+      "central_xy_rmse_m": 1.22220653045248,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30639_44226bde",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 154,
+      "moving_sample_count": 119,
+      "status": "rejected_central_support",
+      "central_count": 92,
+      "central_xy_rmse_m": 6.296022880488288
+    },
+    {
+      "bag": "30639_92226df0",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 218,
+      "moving_sample_count": 173,
+      "status": "central_eligible",
+      "central_count": 133,
+      "central_xy_rmse_m": 0.5075445090589665,
+      "local_fit_count": 2
+    },
+    {
+      "bag": "30639_9c362687",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 238,
+      "moving_sample_count": 163,
+      "status": "rejected_central_support",
+      "central_count": 18,
+      "central_xy_rmse_m": 6.672571181434449
+    },
+    {
+      "bag": "30639_c31df386",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 264,
+      "moving_sample_count": 188,
+      "status": "central_eligible",
+      "central_count": 143,
+      "central_xy_rmse_m": 0.8819333882578213,
+      "local_fit_count": 6
+    },
+    {
+      "bag": "30639_d3c43d69",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 151,
+      "moving_sample_count": 114,
+      "status": "rejected_central_support",
+      "central_count": 81,
+      "central_xy_rmse_m": 3.401478525950088
+    },
+    {
+      "bag": "30639_d601d28f",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 188,
+      "moving_sample_count": 169,
+      "status": "central_eligible",
+      "central_count": 127,
+      "central_xy_rmse_m": 0.8125161269517798,
+      "local_fit_count": 2
+    },
+    {
+      "bag": "30639_dce52be4",
+      "part": "train",
+      "date": "2026-05-05",
+      "sampled_quality_count": 187,
+      "moving_sample_count": 136,
+      "status": "central_eligible",
+      "central_count": 109,
+      "central_xy_rmse_m": 1.3773303137802673,
+      "local_fit_count": 4
+    },
+    {
+      "bag": "30639_e4379d7f",
+      "part": "train",
+      "date": "2026-05-05",
+      "status": "no_dual_gnss"
+    }
+  ],
+  "elapsed_seconds": 8.032697299990105
+}

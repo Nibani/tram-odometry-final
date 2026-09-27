@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "source_records": 122,
+  "unique_records": 97,
+  "duplicates": 25,
+  "sha256_checked_against_split": true,
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "reproduction_command": "python scripts/reproduce.py --bags DATA --work FRESH_WORK --exe build/pipeline_cli.exe",
+  "exit_code": 0,
+  "cache_state": "fresh decode of all source SQLite files; new feature extraction; no fitting",
+  "validation_metrics_sha256": "ab5802d5701d3512ffb1c7d385a2a926caa010a39aa8564bca867d08c83a4f7c",
+  "audit_metrics_sha256": "164eed33af70dfb093d240ee007f3f52ecaeb1af3e060ac34e8ee656f90aac12",
+  "official_map_restore_sha256_match": [
+    true,
+    true
+  ],
+  "note": "Full raw source archives/rosbags excluded from repository; exact per-record hashes in config/split_v1.json."
+}

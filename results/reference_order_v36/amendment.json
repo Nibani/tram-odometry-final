@@ -1,0 +1,22 @@
+{
+  "oracle_revision": "3.6",
+  "policy": "fix-monotonic-record-high-v1",
+  "runtime_algorithm_changed": false,
+  "runtime_parameters_maps_weights_changed": false,
+  "original_release": "E-20260926-04 / 0.3.0 retained unchanged",
+  "original_runtime_commit": "81650eef11a317e112ee390a595a9e3fd12efd3b",
+  "rescore_command": "python scripts/rescore_saved.py --source <saved-evaluation> --cache <decoded-cache> --out <new-metrics.json>",
+  "validation_numeric_exact": true,
+  "all_quality_speed_init_exact": true,
+  "audit_raw_count_before": 105389,
+  "audit_raw_count_after": 105406,
+  "audit_raw_rmse_before": 31.296397507570408,
+  "audit_raw_rmse_after": 31.293895481595452,
+  "baseline_audit_raw_rmse_after": 30.449823164315276,
+  "builder_expected_csv_exact": "ebadd38dab45bf746c2cbe7914aa6a428a021ea5be961fcaa3a67c4c6dc881bb",
+  "original_reports": {
+    "results/validation_hypotheses/metrics.json": "88b6d26f015bb95b4cd1e8eebc417e4914ba7d523b4403ae6c11f9bffcf5d752",
+    "results/audit_hypotheses/metrics.json": "ada9b7e3d9b5a5acca070e47f7f3a5b1ce4f9ce67ea24b6e06f9a35cd1e40960",
+    "results/audit_joint/metrics.json": "164eed33af70dfb093d240ee007f3f52ecaeb1af3e060ac34e8ee656f90aac12"
+  }
+}

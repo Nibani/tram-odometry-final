@@ -1,0 +1,53 @@
+{
+  "ros": "Humble",
+  "cases": [
+    {
+      "mode": "missing",
+      "outputs": 164,
+      "mean_hz": 19.99999451970953,
+      "max_gap_s": 0.050157442,
+      "latency_p99_ms": 0.429552,
+      "latency_max_ms": 0.5678059999999999,
+      "position_max_error_m": null,
+      "node_peak_rss_kib": 24500,
+      "mean_cpu_cores": 0.010965213109018776,
+      "affinity_cores": 2,
+      "status": "PASS"
+    },
+    {
+      "mode": "mapped",
+      "outputs": 164,
+      "mean_hz": 19.853624464675228,
+      "max_gap_s": 0.119169351,
+      "latency_p99_ms": 1.143325,
+      "latency_max_ms": 1.190683,
+      "position_max_error_m": 2.864950727143878e-05,
+      "node_peak_rss_kib": 24740,
+      "mean_cpu_cores": 0.012565159814157473,
+      "affinity_cores": 2,
+      "status": "PASS"
+    },
+    {
+      "mode": "simulated_clock",
+      "phase_output_counts": [
+        49,
+        49,
+        48
+      ],
+      "backward_jumps_s": [
+        0.5,
+        103.5
+      ],
+      "status": "PASS"
+    },
+    {
+      "mode": "actual_sqlite_rosbag_clock",
+      "outputs": 121,
+      "rate": 2,
+      "status": "PASS"
+    }
+  ],
+  "child_max_rss_kib": 65656,
+  "tested_commit": "4245ad7ba27d9da8216c1292c99a4b51c7982cca",
+  "ci_url": "https://github.com/Nibani/tram-reserve-odometry/actions/runs/36235515911"
+}

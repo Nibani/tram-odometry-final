@@ -1,0 +1,22 @@
+{
+  "command": [
+    "historical-work/research/competition_v04/candidate/build/pipeline_cli.exe",
+    "historical-work/research/competition_v04/candidate/config/route_loop.csv",
+    "historical-work/research/competition_v04/candidate/config/route_hairpin_hypothesis.csv",
+    "--loop",
+    "--speed-scale",
+    "1.0003350854241781",
+    "--map-transform",
+    "-0.023073775662649332",
+    "101281.45326170324",
+    "85499.06949541977",
+    "169.99250112111588",
+    "--sparse-gnss",
+    "--xy-residual"
+  ],
+  "exe_sha256": "0daf068ba6d991c4d401cae8128c6c86f6aadd665d11652a978465a1b3939e41",
+  "script_sha256": "aa243815a7d5b4dbd6925497c60c38272404da41bd43c949707532e3c59db509",
+  "events_sha256": "4e38a3f8f1d48ffd78933c5af92d05d9d1a10ffd4a0cea9bcf53203b6bf05089",
+  "calibration_sha256": "df02b978451980fece5e4675ff5bf56e843106062f3e8390d1ad77e9c8a2c654",
+  "comparison": "Fixed candidate, no training; official exposed development example; offline assumed latency"
+}

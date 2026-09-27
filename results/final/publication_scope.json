@@ -1,0 +1,13 @@
+{
+  "excluded_original_materials": [
+    "docs/task/task-original.pdf",
+    "docs/task/ORGANIZER_CHAT_2026-09-27.txt",
+    "docs/task/CHECKER_README_ORIGINAL.md",
+    "docs/task/DATASET_README_ORIGINAL.md",
+    "docs/task/originals.json",
+    "data/pathgraph/shchukinskaya-tallinskaya.json",
+    "data/pathgraph/tallinskaya-shchukinskaya.json",
+    "tests/fixtures/checker_sample.npz"
+  ],
+  "included": "Source code, derived runtime maps and model weights, authored documentation, aggregate evaluation reports, synthetic tests. Original archives and working history are not published."
+}

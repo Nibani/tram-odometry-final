@@ -1,0 +1,91 @@
+name: ROS Humble build and replay checks
+on: [push, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  humble:
+    runs-on: ubuntu-22.04
+    container: ros:humble-ros-base-jammy
+    timeout-minutes: 35
+    env:
+      OMP_NUM_THREADS: '1'
+      OPENBLAS_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - name: Provision test environment
+        run: |
+          apt-get update -qq
+          apt-get install -y --no-install-recommends build-essential python3-colcon-common-extensions python3-numpy ros-humble-nav-msgs ros-humble-sensor-msgs ros-humble-message-filters
+      - name: Build without dependency downloads
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          colcon build --executor sequential --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+      - name: Standalone src-only build and installed asset check
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          mkdir -p /tmp/src-only-ws
+          cp -a src /tmp/src-only-ws/src
+          cd /tmp/src-only-ws
+          colcon build --executor sequential --cmake-args -DCMAKE_BUILD_TYPE=Release -DBUILD_TESTING=ON
+          test -s install/reserve_odometry/share/reserve_odometry/config/route_loop.csv
+          test -s install/reserve_odometry/share/reserve_odometry/config/map_calibration.json
+      - name: Native and geometry tests
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          colcon test --executor sequential
+          colcon test-result --verbose
+          ./build/reserve_odometry/native_slip_v05
+          python3 tests/test_mode_launch_contract.py
+          python3 tests/test_reference_order.py
+          python3 tests/test_replay_performance.py --out results/ci_perf_gate
+          python3 tests/test_pipeline.py --exe install/reserve_odometry/lib/reserve_odometry/pipeline_cli --work . --out results/ci_properties
+          python3 tests/test_multimap.py --exe install/reserve_odometry/lib/reserve_odometry/pipeline_cli --out results/ci_multimap
+          python3 tests/native_speed_stress.py --core install/reserve_odometry/lib/reserve_odometry/core_cli --out results/ci_stress/speed_stress.json
+      - name: Actual DDS publications and missing-controller recovery
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          python3 tests/ros_smoke.py --out results/ci_ros
+      - name: Full map DDS performance
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          python3 tests/ros_fullmap.py --out results/ci_fullmap
+      - name: Competition mode DDS contract
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          python3 tests/ros_mode_status.py --out results/ci_mode_status
+          python3 tests/ros_checker_compat.py --out results/ci_checker_compat
+          python3 tests/ros_late_pair_recovery.py --out results/ci_late_pair
+          python3 tests/ros_startup_clock_backlog.py --out results/ci_startup_clock
+      - name: Preserve build and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: humble-pre-replay-validation
+          path: |
+            log/
+            results/ci_*/
+      - name: Full organizer example with actual DDS and official checker
+        if: ${{ hashFiles('tests/fixtures/checker_sample.npz') != '' }}
+        shell: bash
+        run: |
+          source /opt/ros/humble/setup.bash
+          source install/setup.bash
+          python3 tests/ros_checker_replay.py --fixture tests/fixtures/checker_sample.npz --official-metrics tests/vendor/official_metrics.py --out results/ci_checker_replay --rate 1 --wall-timeout 1450
+      - name: Preserve final build and test evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: humble-validation
+          path: |
+            log/
+            results/ci_*/

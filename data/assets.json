@@ -1,0 +1,20 @@
+{
+  "repository": "Nibani/tram-reserve-odometry",
+  "tag": "v0.4.1",
+  "assets": [
+    {
+      "id": "training",
+      "asset": "training-dataset.zip",
+      "original_name": "Резервное позиционирование.zip",
+      "bytes": 256371534,
+      "sha256": "a9afe6fec32ff8e23dea6b6d4371aae5f5765b3d2d23a3a88993dd38ad1a8b17"
+    },
+    {
+      "id": "checker",
+      "asset": "checker-dataset.zip",
+      "original_name": "check-code-with-bag.zip",
+      "bytes": 16487608,
+      "sha256": "a48bfb5acfaafbb29fa423164ae0bffda114f810bcd456acbaf9cdd76e626a3f"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "newchecker_prediction_text_byte_exact": true,
+  "changed_runtime_files": [
+    "src/reserve_odometry/include/reserve_odometry/pipeline.hpp"
+  ],
+  "runtime_sha256": "015e44e78196d7c82c34046deb1edfba0c68b63924f63cff957fd6f4b34deab4",
+  "author_controls_pass": 32,
+  "startup_controls_pass": 15,
+  "independent_critic_controls_reported_pass": 27,
+  "old26_all_columns_bit_exact": true,
+  "prior_uninitialized_changes": 0
+}

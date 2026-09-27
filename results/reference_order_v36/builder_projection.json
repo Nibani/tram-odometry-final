@@ -1,0 +1,81 @@
+{
+  "prior_sampling_report_sha256": "6e9c990dac3299d50c2a513f698a864dc8a77207fb66f7682828e656065d9845",
+  "projector_sha256": "4de5b32c52e5f2ee1a961e6339b25b3552c2c3a67f45afd6b865d5f1869eb2b6",
+  "baseline_sha256": "16c11b14e7d776fe572775b43c0e342b8ec028b8ed19628f1a95a50e2b7f320e",
+  "builder_sha256": "fc9906f72d9600faf26b943e18a1b3304446bf1044374b2305892296a002a524",
+  "code_sha256": "7f025ce433a88508edc3497a6696c49144984431471b48f442048779c13d131c",
+  "bags": [
+    {
+      "bag": "30618_40ffd323",
+      "versions": [
+        {
+          "version": "old",
+          "projected_points": 162,
+          "central_count": 110,
+          "central_xy_rmse_m": 0.4036059193956294,
+          "central_eligible": true,
+          "local_count": 3,
+          "local_q_ns": [
+            1786384992350903997,
+            1786384997350956381,
+            1786385007450920157
+          ],
+          "local_t_s": [
+            23.149972901,
+            28.150025285,
+            38.249989061
+          ],
+          "local_fit_distance_cross": [
+            [
+              557.5540813685348,
+              0.004767412007333063
+            ],
+            [
+              574.5396192095232,
+              0.98062710710104
+            ],
+            [
+              608.6614133138901,
+              -2.378987790291262
+            ]
+          ]
+        },
+        {
+          "version": "filtered",
+          "projected_points": 160,
+          "central_count": 109,
+          "central_xy_rmse_m": 0.396583530404165,
+          "central_eligible": true,
+          "local_count": 3,
+          "local_q_ns": [
+            1786384992350903997,
+            1786384997350956381,
+            1786385007450920157
+          ],
+          "local_t_s": [
+            23.149972901,
+            28.150025285,
+            38.249989061
+          ],
+          "local_fit_distance_cross": [
+            [
+              557.5540813685348,
+              0.004767412007333063
+            ],
+            [
+              574.5396192095232,
+              0.98062710710104
+            ],
+            [
+              608.6614133138901,
+              -2.378987790291262
+            ]
+          ]
+        }
+      ],
+      "effective_fit_inputs_exact": true
+    }
+  ],
+  "effective_fit_inputs_exact_all": true,
+  "wall_seconds": 0.15669030000572093
+}

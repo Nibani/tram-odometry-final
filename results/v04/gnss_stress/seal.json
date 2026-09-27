@@ -1,0 +1,33 @@
+{
+  "prepared_before_outcomes": true,
+  "local": {
+    "design.json": "7611383c23a4db981a58b792ab75c33c14379929c226719a758aa8ec4488c558",
+    "bias_north/events.txt": "1321e9510206b5285e89386d5caf5a954874dfca230dc1398ba4cabadb66ac4e",
+    "bias_north/input_order.npz": "eb96d3e2815fedcbd32c5fff009d3d81f8fe41d1b26b70eba9ed3bb65ccbc184",
+    "even_bursts/events.txt": "3734c99ec7f09c9a4f934ca578914b0c411176018e68e1aa19d7102818f0f4a6",
+    "even_bursts/input_order.npz": "aa7023dd120967cc4eeee55e997972b9e5db637d21ebc67ca3c1b2a8118f0573",
+    "no_late/events.txt": "76ff59f21fc650e30af24b20ddb4404c66b7853dbf6f627dc4020790927c3a65",
+    "no_late/input_order.npz": "670ce5e1193c250ee2c5eb36374edbd0c8293590462a8e3e8ef2eec5d1b95f58",
+    "odd_bursts/events.txt": "185c4a38861fd0a3b9443ee3ec1f784f4495276bc74bbc7545e21daad6b11942",
+    "odd_bursts/input_order.npz": "e713559281e1a2f9b021fe68c717ccdb9fdb9cae8739db5e699a7b9f80e35e13",
+    "outlier_north/events.txt": "56aba6c1099ae79179e6cd03e654f621390333c519dde4b1daf4de10f44b27ee",
+    "outlier_north/input_order.npz": "eb96d3e2815fedcbd32c5fff009d3d81f8fe41d1b26b70eba9ed3bb65ccbc184",
+    "provided/events.txt": "4e38a3f8f1d48ffd78933c5af92d05d9d1a10ffd4a0cea9bcf53203b6bf05089",
+    "provided/input_order.npz": "44ca61256fcac2bcfdb1ce6ddd24cc1e36b5092bf0f18f9f6cda52a8df4eb7c0",
+    "runtime/map_calibration.json": "df02b978451980fece5e4675ff5bf56e843106062f3e8390d1ad77e9c8a2c654",
+    "runtime/pipeline_cli.exe": "6086cb5c11a73be061a5fb2c5eb164ece12444de5e0623c560fdae593ca3ff26",
+    "runtime/route_hairpin_hypothesis.csv": "ebadd38dab45bf746c2cbe7914aa6a428a021ea5be961fcaa3a67c4c6dc881bb",
+    "runtime/route_loop.csv": "16c11b14e7d776fe572775b43c0e342b8ec028b8ed19628f1a95a50e2b7f320e"
+  },
+  "external": {
+    "events.txt": "4e38a3f8f1d48ffd78933c5af92d05d9d1a10ffd4a0cea9bcf53203b6bf05089",
+    "inputs.npz": "a206cac8cb9a78a031192170c5449a61c134a6252bb129df41e9e5d2986ddcca",
+    "reference.npz": "e87e8cc53a5059bb34bab60689bf04505ed47d8ad065aec48e57d8144d547ec9",
+    "source_manifest.json": "a59c6b56f1ba40d8ceb1482587884f8eae1d54652c1d3242683f5e66d0d54b89",
+    "map_calibration.json": "df02b978451980fece5e4675ff5bf56e843106062f3e8390d1ad77e9c8a2c654",
+    "official_metrics.py": "3f6e46923ad431d7ae4f811ff144cbca00c572a1631277dcaa3659cdf8e7a058",
+    "scorer": "6226dcead538088f745459dc71f0050fa6607c1e660661856a454b7da74f84c5",
+    "script": "eaf07cbaea924cb122d4874a353b22b397d5f8d211bfebc2ac124c5a65c4eed2",
+    "plan": "a3b72e2000581be49d0827a734f9f16b28bd23113e197a516b199ff14c0701f2"
+  }
+}

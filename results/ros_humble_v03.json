@@ -1,0 +1,143 @@
+{
+  "ros": "Humble",
+  "tested_commit": "81650eef11a317e112ee390a595a9e3fd12efd3b",
+  "ci_run": "36239255867",
+  "ci_url": "https://github.com/Nibani/tram-reserve-odometry/actions/runs/36239255867",
+  "original_logs_sha256": "0571082e2ef3b5177ee0118ff72adcd598012930c7d0feb6f2811deaa759aca9",
+  "cases": [
+    {
+      "mode": "missing",
+      "outputs": 165,
+      "mean_hz": 19.999991541609415,
+      "max_gap_s": 0.050017602,
+      "latency_p99_ms": 0.255872,
+      "latency_max_ms": 0.285707,
+      "position_max_error_m": null,
+      "node_peak_rss_kib": 24620,
+      "mean_cpu_cores": 0.006969609099891339,
+      "affinity_cores": 2,
+      "status": "PASS"
+    },
+    {
+      "mode": "mapped",
+      "outputs": 164,
+      "mean_hz": 19.858859090389,
+      "max_gap_s": 0.121202534,
+      "latency_p99_ms": 0.7710819999999999,
+      "latency_max_ms": 0.852347,
+      "position_max_error_m": 1.862693699195006e-05,
+      "node_peak_rss_kib": 24768,
+      "mean_cpu_cores": 0.008109814434844343,
+      "affinity_cores": 2,
+      "status": "PASS"
+    },
+    {
+      "mode": "hypotheses",
+      "outputs": 165,
+      "mean_hz": 19.850511658439615,
+      "max_gap_s": 0.101186591,
+      "latency_p99_ms": 0.758371,
+      "latency_max_ms": 0.766075,
+      "position_max_error_m": 1.8780044200639168e-05,
+      "node_peak_rss_kib": 24928,
+      "mean_cpu_cores": 0.008258447135937824,
+      "affinity_cores": 2,
+      "status": "PASS"
+    },
+    {
+      "mode": "simulated_clock",
+      "phase_output_counts": [
+        49,
+        49,
+        48
+      ],
+      "backward_jumps_s": [
+        0.5,
+        103.5
+      ],
+      "status": "PASS"
+    },
+    {
+      "mode": "actual_sqlite_rosbag_clock",
+      "outputs": 121,
+      "rate": 2,
+      "status": "PASS"
+    }
+  ],
+  "child_max_rss_kib": 65864,
+  "full_map": {
+    "mode": "installed_full_maps",
+    "status": "PASS",
+    "checks": {
+      "two_cpu_affinity": true,
+      "node_memory_below_512_MiB": true,
+      "mean_cpu_below_two_cores": true,
+      "input_count_160": true,
+      "initial_gnss_only": true,
+      "output_count_at_least_100": true,
+      "velocity_close_to_5_mps": true,
+      "monotonic_stamps": true,
+      "publication_at_least_10_Hz": true,
+      "max_gap_below_250_ms": true,
+      "latency_p99_below_100_ms": true,
+      "latency_max_below_250_ms": true,
+      "initialized_map_enu": true,
+      "position_XYZ_error_below_0_3_m": true
+    },
+    "maps": [
+      {
+        "path": "/__w/tram-reserve-odometry/tram-reserve-odometry/install/reserve_odometry/share/reserve_odometry/config/route_loop.csv",
+        "vertices": 10991,
+        "length_m": 11036.254598166197,
+        "closure_gap_m": 0.0,
+        "sha256": "6ee15c70018210cf0e1474fddffd33bb6f460a93bb65bdccae16e7247d984ba0",
+        "canonical_lf_sha256": "6ee15c70018210cf0e1474fddffd33bb6f460a93bb65bdccae16e7247d984ba0"
+      },
+      {
+        "path": "/__w/tram-reserve-odometry/tram-reserve-odometry/install/reserve_odometry/share/reserve_odometry/config/route_hairpin_hypothesis.csv",
+        "vertices": 10991,
+        "length_m": 11045.087157022188,
+        "closure_gap_m": 0.0,
+        "sha256": "93dfcca102101600d3347f04d968046d062782e59c43f71931a79873d2a4743f",
+        "canonical_lf_sha256": "93dfcca102101600d3347f04d968046d062782e59c43f71931a79873d2a4743f"
+      }
+    ],
+    "closed_route": true,
+    "truth_route": "route_loop.csv",
+    "start_s_m": 800.0,
+    "truth_speed_mps": 5.0,
+    "speed_scale": 1.0003350854241781,
+    "raw_wheel_input": 17.993970482768134,
+    "discovery_s": 2.0,
+    "input_duration_s": 8.0,
+    "input_hz": 20.0,
+    "inputs_per_wheel": 160,
+    "gnss_pairs": 30,
+    "last_gnss_header_elapsed_s": 2.900521436,
+    "timing_window_s": [
+      1.0,
+      7.9
+    ],
+    "position_window_s": [
+      3.2,
+      7.9
+    ],
+    "outputs": 165,
+    "timing_outputs": 138,
+    "position_outputs": 94,
+    "mean_hz": 19.998943480632125,
+    "max_gap_s": 0.051659288000000005,
+    "latency_p99_ms": 2.5699549999999998,
+    "latency_max_ms": 3.280595,
+    "latency_definition": "input header wall-clock time to velocity subscriber receipt",
+    "position_max_error_m": 1.4112527903648224e-06,
+    "node_peak_rss_kib": 25544,
+    "mean_cpu_cores": 0.010985929782934362,
+    "cpu_observation_wall_s": 10.436804372999973,
+    "affinity_cores": 2,
+    "affinity_cpu_ids": [
+      0,
+      1
+    ]
+  }
+}

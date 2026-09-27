@@ -1,0 +1,294 @@
+{
+  "status": "FROZEN_VALIDATION_PASS_NEEDS_ACCEPTANCE",
+  "checks": {
+    "pooled_5percent_improvement": true,
+    "vehicles_max5percent_regression": true,
+    "speed_distance_exact": true,
+    "coverage_equal": true,
+    "all22_initialized": true
+  },
+  "per_group": {
+    "all": {
+      "base_xyz_quality": {
+        "baseline_rmse": 8.73733268735141,
+        "candidate_rmse": 7.6626947476688,
+        "change_fraction": -0.12299382181455776,
+        "n_equal": true
+      },
+      "base_xyz_valid": {
+        "baseline_rmse": 8.99984934370786,
+        "candidate_rmse": 7.863374165386445,
+        "change_fraction": -0.12627713364068338,
+        "n_equal": true
+      },
+      "base_xy_quality": {
+        "baseline_rmse": 8.313193348466609,
+        "candidate_rmse": 7.174145381577165,
+        "change_fraction": -0.1370168982175236,
+        "n_equal": true
+      },
+      "base_z_quality": {
+        "baseline_rmse": 2.6892004091309287,
+        "candidate_rmse": 2.692309202143404,
+        "change_fraction": 0.0011560287592995433,
+        "n_equal": true
+      }
+    },
+    "30618": {
+      "base_xyz_quality": {
+        "baseline_rmse": 7.289133356748642,
+        "candidate_rmse": 4.525384368088661,
+        "change_fraction": -0.3791601625865666,
+        "n_equal": true
+      },
+      "base_xyz_valid": {
+        "baseline_rmse": 7.7676497045580675,
+        "candidate_rmse": 4.948726543422433,
+        "change_fraction": -0.36290554651061135,
+        "n_equal": true
+      },
+      "base_xy_quality": {
+        "baseline_rmse": 7.2709131032074685,
+        "candidate_rmse": 4.496365298035646,
+        "change_fraction": -0.38159551156619753,
+        "n_equal": true
+      },
+      "base_z_quality": {
+        "baseline_rmse": 0.515060907147549,
+        "candidate_rmse": 0.5116666742734203,
+        "change_fraction": -0.006589964074202981,
+        "n_equal": true
+      }
+    },
+    "30639": {
+      "base_xyz_quality": {
+        "baseline_rmse": 10.612084512557999,
+        "candidate_rmse": 10.8848842926802,
+        "change_fraction": 0.025706521635723734,
+        "n_equal": true
+      },
+      "base_xyz_valid": {
+        "baseline_rmse": 10.609712562344162,
+        "candidate_rmse": 10.903683141349882,
+        "change_fraction": 0.02770768550781244,
+        "n_equal": true
+      },
+      "base_xy_quality": {
+        "baseline_rmse": 9.720916537468833,
+        "candidate_rmse": 10.015600915485779,
+        "change_fraction": 0.030314464369804783,
+        "n_equal": true
+      },
+      "base_z_quality": {
+        "baseline_rmse": 4.256773352345446,
+        "candidate_rmse": 4.262445819803061,
+        "change_fraction": 0.0013325744614729462,
+        "n_equal": true
+      }
+    }
+  },
+  "per_bag": [
+    {
+      "bag": "30618_01f73500",
+      "route": 1,
+      "baseline_xyz_quality": 9.60599242649722,
+      "new_xyz_quality": 5.275693590714909,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.4507914063972809
+    },
+    {
+      "bag": "30618_082f1d65",
+      "route": 0,
+      "baseline_xyz_quality": 1.1090527071615337,
+      "new_xyz_quality": 1.1090527071615337,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_2050d396",
+      "route": 0,
+      "baseline_xyz_quality": 1.3168016804922356,
+      "new_xyz_quality": 1.3168016804922356,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_33bec73f",
+      "route": 0,
+      "baseline_xyz_quality": 1.3244112402473716,
+      "new_xyz_quality": 1.3244112402473716,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_3e9f4952",
+      "route": 1,
+      "baseline_xyz_quality": 10.512686326891098,
+      "new_xyz_quality": 6.436588391386344,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.3877313380004721
+    },
+    {
+      "bag": "30618_437e855c",
+      "route": 1,
+      "baseline_xyz_quality": 8.91533891817,
+      "new_xyz_quality": 5.01634086549115,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.4373359317538065
+    },
+    {
+      "bag": "30618_67b89902",
+      "route": 0,
+      "baseline_xyz_quality": 1.536389673101937,
+      "new_xyz_quality": 1.536389673101937,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_a53d5f6f",
+      "route": 1,
+      "baseline_xyz_quality": 10.401240185024088,
+      "new_xyz_quality": 5.790763494440128,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.443262208022291
+    },
+    {
+      "bag": "30618_a869780d",
+      "route": 0,
+      "baseline_xyz_quality": 6.551394570784969,
+      "new_xyz_quality": 6.551394570784969,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_d4ba7005",
+      "route": 0,
+      "baseline_xyz_quality": 2.3877509775250902,
+      "new_xyz_quality": 2.3877509775250902,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30618_dd8d0741",
+      "route": 1,
+      "baseline_xyz_quality": 10.788634375273244,
+      "new_xyz_quality": 6.989715581228192,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.3521223040751009
+    },
+    {
+      "bag": "30618_dd8e6395",
+      "route": 1,
+      "baseline_xyz_quality": 9.502514751883306,
+      "new_xyz_quality": 4.709391011199571,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.5044058194946537
+    },
+    {
+      "bag": "30618_e9a34502",
+      "route": 0,
+      "baseline_xyz_quality": 2.5642087732507424,
+      "new_xyz_quality": 2.5642087732507424,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30639_0ab96c59",
+      "route": 0,
+      "baseline_xyz_quality": 0.175324287012656,
+      "new_xyz_quality": 0.175324287012656,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30639_0be558e2",
+      "route": 1,
+      "baseline_xyz_quality": 9.23924044367965,
+      "new_xyz_quality": 8.561502102632524,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": -0.0733543352593179
+    },
+    {
+      "bag": "30639_2b4a6347",
+      "route": 0,
+      "baseline_xyz_quality": 8.940319335208072,
+      "new_xyz_quality": 8.940319335208072,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30639_4285f2bc",
+      "route": 1,
+      "baseline_xyz_quality": 18.771917130819013,
+      "new_xyz_quality": 19.621085910806304,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.04523612447623471
+    },
+    {
+      "bag": "30639_50956d6e",
+      "route": 1,
+      "baseline_xyz_quality": 5.696961066107163,
+      "new_xyz_quality": 6.776775942299309,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.18954226010359632
+    },
+    {
+      "bag": "30639_584b6e32",
+      "route": 1,
+      "baseline_xyz_quality": 5.676634247267387,
+      "new_xyz_quality": 6.405980267471082,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.12848212310926788
+    },
+    {
+      "bag": "30639_927002c2",
+      "route": 0,
+      "baseline_xyz_quality": 11.297199734396292,
+      "new_xyz_quality": 11.297199734396292,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30639_9f0b519f",
+      "route": 0,
+      "baseline_xyz_quality": 8.253004138780536,
+      "new_xyz_quality": 8.253004138780536,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    },
+    {
+      "bag": "30639_d927f360",
+      "route": 0,
+      "baseline_xyz_quality": 9.03302228537607,
+      "new_xyz_quality": 9.03302228537607,
+      "speed_and_distance_exact": true,
+      "coverage_equal": true,
+      "rmse_change_fraction": 0.0
+    }
+  ],
+  "source_sha256": {
+    "baseline": "ab5802d5701d3512ffb1c7d385a2a926caa010a39aa8564bca867d08c83a4f7c",
+    "candidate": "959b9633f88c2344944651478194ca4373531d364239040da2201169dca419a3"
+  }
+}

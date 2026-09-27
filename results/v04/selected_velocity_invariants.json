@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "checks": [
+    "scalar exact original",
+    "all remaining columns exact corrected arm"
+  ],
+  "reason": "Publication-only choice; no core or map change"
+}

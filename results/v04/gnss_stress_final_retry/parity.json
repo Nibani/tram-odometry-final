@@ -1,0 +1,17 @@
+{
+  "same_prediction_bytes_per_arm": {
+    "provided": true,
+    "no_late": true,
+    "even_bursts": true,
+    "odd_bursts": true,
+    "outlier_north": true,
+    "bias_north": true
+  },
+  "source_scope": "Final retry pipeline rebuilt by root; ROS adapter itself is exercised only in CI",
+  "source_sha256": {
+    "src/reserve_odometry/include/reserve_odometry/pipeline.hpp": "015e44e78196d7c82c34046deb1edfba0c68b63924f63cff957fd6f4b34deab4",
+    "src/reserve_odometry/src/pipeline_cli.cpp": "660bfa15b99bf9eeb9931dab27906d4b28908b5949f2cb628c1fc1f29a6aa58a",
+    "src/reserve_odometry/src/odometry_node.cpp": "24f911617757fc94926f5bf59da237d6ccb50454ffd1256536a83e186e2a21dd"
+  },
+  "all_33_invariants_pass": true
+}

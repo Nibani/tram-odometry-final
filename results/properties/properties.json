@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "tests": [
+    "moving_start_delayed_fixes",
+    "absolute_init_from_prefix",
+    "post_window_GNSS_isolation",
+    "future_header_not_used_early",
+    "future_controller_rejected",
+    "future_GNSS_rejected_before_start",
+    "prefix_invariance",
+    "clock_reset",
+    "good_and_wrong_speed_controls",
+    "analytic_circle_body_twist",
+    "joint_antenna_XY_fit_Z_error0.0",
+    "joint_antenna_XY_fit_Z_error1.0"
+  ],
+  "n_outputs": 121,
+  "moving_start_max_error_m": 3.440447926550405e-11
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "route": 0,
+    "train_bag": "30618_0652866c",
+    "official_length": 4708.9273098462245,
+    "extended_length": 5620.810208328567,
+    "prefix_points": 587,
+    "suffix_points": 330,
+    "wheel_start": 587.4685941525848,
+    "wheel_end": 5294.666975470616,
+    "source": "train-only GNSS base_link geometry; static official middle unchanged",
+    "assumption": "offline geometry calibration permitted; official-only mode remains available"
+  },
+  {
+    "route": 1,
+    "train_bag": "30618_073f08d1",
+    "official_length": 4708.56164985068,
+    "extended_length": 5416.435738966169,
+    "prefix_points": 189,
+    "suffix_points": 518,
+    "wheel_start": 189.21829265082846,
+    "wheel_end": 4895.997522932704,
+    "source": "train-only GNSS base_link geometry; static official middle unchanged",
+    "assumption": "offline geometry calibration permitted; official-only mode remains available"
+  }
+]

@@ -1,0 +1,5 @@
+data/pathgraph/*.json -text
+docs/task/task-original.pdf -text
+docs/task/DATASET_README_ORIGINAL.md -text
+docs/task/CHECKER_README_ORIGINAL.md -text
+docs/task/ORGANIZER_CHAT_2026-09-27.txt -text

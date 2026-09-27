@@ -1,0 +1,49 @@
+{
+  "native_compilation": "PASS",
+  "legacy_assertions": [
+    "legacy_and_no_fix_invariance",
+    "single_master",
+    "single_rover",
+    "delayed_fix_uses_measurement_epoch",
+    "future_fix_queued_until_epoch",
+    "future_over_tolerance_does_not_poison_order",
+    "stale_at_arrival_rejected",
+    "stale_at_processing_rejected",
+    "duplicate_after_consumption_rejected",
+    "per_receiver_duplicate_watermark",
+    "innovation_gate",
+    "cross_track_residual_gate",
+    "per_fix_total_correction_cap",
+    "invalid_fix_does_not_poison_order",
+    "circle_master_lever_arm",
+    "circle_rover_lever_arm",
+    "grade_roof_height_lever_arm",
+    "reset_clears_correction_state",
+    "missing_startup_gnss_preserves_relative_state"
+  ],
+  "xy_assertions": [
+    "XY single master cross3",
+    "XY single rover cross3",
+    "XY29m residual capped at5m old mode rejects",
+    "XY outlier31m rejected",
+    "XY stale future status reject",
+    "XY feature does nothing when sparse correction off",
+    "XY independent along and lateral5m caps",
+    "XY reset clears map translation",
+    "XY decay exactly exp(-100m/100m)",
+    "XY decay freezes at standstill",
+    "XY decay preserves permanent initial alignment"
+  ],
+  "all_pass": true,
+  "ros_dds": "NOT_RUN_NO_LOCAL_ROS",
+  "root_snapshot_changes_after_copy": [
+    "config\\input_sources.json"
+  ],
+  "changed_files": {
+    "src\\reserve_odometry\\include\\reserve_odometry\\pipeline.hpp": "3b94253996a26e6f5947ec05a57c65bd5da3be9f36b66a33370751b81c1938a8",
+    "src\\reserve_odometry\\src\\odometry_node.cpp": "a5d6a36b9a4fb4958af9df1fb7f00b7b89ff67e66b72d3f4e4e6c9e7fce72181",
+    "src\\reserve_odometry\\src\\pipeline_cli.cpp": "660bfa15b99bf9eeb9931dab27906d4b28908b5949f2cb628c1fc1f29a6aa58a"
+  },
+  "pre_outcome_seal": "ce8e488b2afd751bacd9fe9f1ec9bd9cf4cf7226890c035690edac7788b48f18",
+  "runtime_output_counters": "CLI does not export GNSS accepted/rejected counters; no bag-count claim."
+}

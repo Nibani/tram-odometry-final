@@ -1,0 +1,23 @@
+--- a/src/reserve_odometry/include/reserve_odometry/pipeline.hpp
++++ b/src/reserve_odometry/include/reserve_odometry/pipeline.hpp
+@@ -63,6 +63,7 @@
+      auto predicted=[&](double phase){return add(antenna(routes_[route_].pose(phase),x,cfg_.antenna_height),add(map_shift_,gnss_xy_bias_));};
+      auto p=predicted(s);gnss_last_innovation_=std::hypot(f.xyz[0]-p[0],f.xyz[1]-p[1]);
+      if(gnss_last_innovation_>cfg_.gnss_innovation_gate){++gnss_rejected_;continue;}
++     double best_s=s,best_residual=gnss_last_innovation_;
+      for(int iteration=0;iteration<5;++iteration){
+        p=predicted(s);auto lo=predicted(s-.25),hi=predicted(s+.25);
+        double dx=(hi[0]-lo[0])*2.,dy=(hi[1]-lo[1])*2.,den=dx*dx+dy*dy;
+@@ -70,7 +71,12 @@
+        double delta=((f.xyz[0]-p[0])*dx+(f.xyz[1]-p[1])*dy)/den;
+        s=std::clamp(s+std::clamp(delta,-10.,10.),base_s-cfg_.gnss_innovation_gate,base_s+cfg_.gnss_innovation_gate);
+        if(!routes_[route_].closed())s=std::clamp(s,0.,routes_[route_].end());
++       if(cfg_.gnss_xy_residual_correction){
++         auto candidate=predicted(s);double cost=std::hypot(f.xyz[0]-candidate[0],f.xyz[1]-candidate[1]);
++         if(cost<best_residual){best_s=s;best_residual=cost;}
++       }
+      }
++     if(cfg_.gnss_xy_residual_correction)s=best_s;
+      p=predicted(s);
+      double residual=std::hypot(f.xyz[0]-p[0],f.xyz[1]-p[1]);
+      double residual_gate=cfg_.gnss_xy_residual_correction?cfg_.gnss_innovation_gate:cfg_.gnss_residual_gate;

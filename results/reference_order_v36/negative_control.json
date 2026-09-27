@@ -1,0 +1,13 @@
+{
+  "tests_run": 8,
+  "failures": 4,
+  "errors": 0,
+  "bad_implementation_sha256": "9a979408625bbdc09e8f8b2929f86ea2dc2b8f0ee174e9bb24df136e27136ab2",
+  "failed_tests": [
+    "test_each_receiver_filtered_independently (order_tests.ReferenceOrder.test_each_receiver_filtered_independently)",
+    "test_explicit_nonincreasing_rows (order_tests.ReferenceOrder.test_explicit_nonincreasing_rows)",
+    "test_first_duplicate_wins (order_tests.ReferenceOrder.test_first_duplicate_wins)",
+    "test_record_high_not_only_adjacent (order_tests.ReferenceOrder.test_record_high_not_only_adjacent)"
+  ],
+  "interpretation": "Expected substantive failures of historical nonmonotonic-reference logic; no import/environment error"
+}

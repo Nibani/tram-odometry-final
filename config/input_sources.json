@@ -1,0 +1,26 @@
+{
+  "Резервная одометрия по модели.pdf": {
+    "size": 181211,
+    "sha256": "a11ce573497ff7016eea9f47faaa6514e990c565459a0e1f3bcc4ccbcac132ab"
+  },
+  "Резервное позиционирование.zip": {
+    "size": 256371534,
+    "sha256": "a9afe6fec32ff8e23dea6b6d4371aae5f5765b3d2d23a3a88993dd38ad1a8b17"
+  },
+  "tram_solution_v1.zip": {
+    "size": 12785613,
+    "sha256": "a2f0ed0a19e325a5d74a8896874bcf86b959c50bd0a0c32a21c1fe68abcafe69"
+  },
+  "щукинская - таллинская.json": {
+    "size": 1106501,
+    "sha256": "036e2d746b87daa6f060485c93b2b8ef942a15f83d357ac252313f84b3ab50c9"
+  },
+  "таллинская - щукинская.json": {
+    "size": 1108758,
+    "sha256": "7a402fcd426a607ad2f6cf2fca7dbf38cf2e9a171cd5034c61eb3d71bc0e53ba"
+  },
+  "check-code-with-bag.zip": {
+    "size": 16487608,
+    "sha256": "a48bfb5acfaafbb29fa423164ae0bffda114f810bcd456acbaf9cdd76e626a3f"
+  }
+}

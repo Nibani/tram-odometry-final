@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="369" viewBox="0 0 1080 369" role="img" aria-labelledby="title desc">
+<title id="title">Development-exposed audit: version 0.3.1 and E-02 XYZ error</title>
+<desc id="desc">Bars: version 0.3.1 quality XYZ RMSE. Hollow circles: version 0.3.1 raw XYZ RMSE. Gray diamonds: E-02 quality XYZ RMSE. All data are development-exposed; errors in metres.</desc>
+<metadata>{&quot;source&quot;: &quot;results/audit_hypotheses/metrics.json&quot;, &quot;source_sha256&quot;: &quot;6eadaf1445ff1c69dcbd02d391a3aac49e10b3971148797ba1466d4b139462ce&quot;, &quot;baseline_source&quot;: &quot;results/audit_joint/metrics.json&quot;, &quot;baseline_sha256&quot;: &quot;abfcff4f8c8ac5c1a37db6f878f0bbda7dfd4477d7c9e1d73427090e6ac11537&quot;, &quot;plot_seed&quot;: &quot;N/A deterministic; sorted bag identifiers&quot;, &quot;oracle_revision&quot;: &quot;3.6&quot;}</metadata>
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#202830}.small{font-size:12px}.label{font-size:13px}.mono{font-family:Consolas,monospace;font-size:13px}</style>
+<text x="24" y="34" font-size="22" font-weight="bold">Development-exposed audit: version 0.3.1 and E-02 XYZ error</text>
+<text x="24" y="60" font-size="14">Same B6 speed and distance; causal startup selection between two static map hypotheses.</text>
+<rect x="25" y="82" width="18" height="12" fill="#b35421"/>
+<text x="50" y="94" class="label">30618: v0.3.1 quality</text>
+<circle cx="244" cy="88" r="5" fill="white" stroke="#232a32" stroke-width="1.7"/>
+<text x="258" y="94" class="label">v0.3.1 raw</text>
+<polygon points="378,82 384,88 378,94 372,88" fill="#c5cbd0" stroke="#49545e" stroke-width="1.2"/>
+<text x="394" y="94" class="label">E-02 quality</text>
+<text x="205" y="129" class="small">XYZ RMSE (m)</text>
+<text x="884" y="129" class="small">v0.3.1 quality</text>
+<text x="987" y="129" class="small">N quality</text>
+<line x1="205.0" y1="145" x2="205.0" y2="274" stroke="#d8dfe5"/>
+<text x="205.0" y="296" text-anchor="middle" class="label">0</text>
+<line x1="335.0" y1="145" x2="335.0" y2="274" stroke="#d8dfe5"/>
+<text x="335.0" y="296" text-anchor="middle" class="label">10</text>
+<line x1="465.0" y1="145" x2="465.0" y2="274" stroke="#d8dfe5"/>
+<text x="465.0" y="296" text-anchor="middle" class="label">20</text>
+<line x1="595.0" y1="145" x2="595.0" y2="274" stroke="#d8dfe5"/>
+<text x="595.0" y="296" text-anchor="middle" class="label">30</text>
+<line x1="725.0" y1="145" x2="725.0" y2="274" stroke="#d8dfe5"/>
+<text x="725.0" y="296" text-anchor="middle" class="label">40</text>
+<line x1="855.0" y1="145" x2="855.0" y2="274" stroke="#d8dfe5"/>
+<text x="855.0" y="296" text-anchor="middle" class="label">50</text>
+<rect x="22" y="147" width="1030" height="31" fill="#f1f4f7" opacity="0.45"/>
+<text x="190" y="167" text-anchor="end" class="mono">30618_0686195f</text>
+<rect x="205" y="153" width="523.04326" height="18" rx="1.5" fill="#b35421"/>
+<polygon points="728.04326,156 734.04326,162 728.04326,168 722.04326,162" fill="#c5cbd0" stroke="#49545e" stroke-width="1.2"/>
+<circle cx="716.91785" cy="162" r="4" fill="white" stroke="#232a32" stroke-width="1.5"/>
+<text x="954" y="167" text-anchor="end" class="mono">40.234</text>
+<text x="1049" y="167" text-anchor="end" class="mono">21,950</text>
+<text x="190" y="198" text-anchor="end" class="mono">30618_27e994fc</text>
+<rect x="205" y="184" width="293.50484" height="18" rx="1.5" fill="#b35421"/>
+<polygon points="446.04093,187 452.04093,193 446.04093,199 440.04093,193" fill="#c5cbd0" stroke="#49545e" stroke-width="1.2"/>
+<circle cx="485.53863" cy="193" r="4" fill="white" stroke="#232a32" stroke-width="1.5"/>
+<text x="954" y="198" text-anchor="end" class="mono">22.577</text>
+<text x="1049" y="198" text-anchor="end" class="mono">30,835</text>
+<rect x="22" y="209" width="1030" height="31" fill="#f1f4f7" opacity="0.45"/>
+<text x="190" y="229" text-anchor="end" class="mono">30618_88548b02</text>
+<rect x="205" y="215" width="255.76665" height="18" rx="1.5" fill="#b35421"/>
+<polygon points="460.76665,218 466.76665,224 460.76665,230 454.76665,224" fill="#c5cbd0" stroke="#49545e" stroke-width="1.2"/>
+<circle cx="464.12380" cy="224" r="4" fill="white" stroke="#232a32" stroke-width="1.5"/>
+<text x="954" y="229" text-anchor="end" class="mono">19.674</text>
+<text x="1049" y="229" text-anchor="end" class="mono">24,159</text>
+<text x="190" y="260" text-anchor="end" class="mono">30618_defd0170</text>
+<rect x="205" y="246" width="579.94337" height="18" rx="1.5" fill="#b35421"/>
+<polygon points="784.94337,249 790.94337,255 784.94337,261 778.94337,255" fill="#c5cbd0" stroke="#49545e" stroke-width="1.2"/>
+<circle cx="778.71652" cy="255" r="4" fill="white" stroke="#232a32" stroke-width="1.5"/>
+<text x="954" y="260" text-anchor="end" class="mono">44.611</text>
+<text x="1049" y="260" text-anchor="end" class="mono">18,472</text>
+<line x1="205" y1="274" x2="855" y2="274" stroke="#607080"/>
+<text x="24" y="329" class="small">Quality: paired-reference baseline 11.9–12.9 m; both time offsets within 50 ms; first 3 s excluded. Identical coverage.</text>
+<text x="24" y="349" class="small">Validation axis 0–20 m; audit axis 0–50 m. Plot seed: N/A, deterministic. Individual regressions are retained.</text>
+</svg>

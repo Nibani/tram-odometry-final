@@ -1,0 +1,44 @@
+{
+  "origin_lla": [
+    55.805,
+    37.425,
+    170.0
+  ],
+  "enu_to_map_R": [
+    [
+      0.999733812248493,
+      0.02307172830749477
+    ],
+    [
+      -0.02307172830749481,
+      0.9997338122484932
+    ]
+  ],
+  "enu_to_map_translation": [
+    101281.45326170324,
+    85499.06949541977
+  ],
+  "map_z_minus_enu_up": 169.99250112111588,
+  "train_bags": [
+    "30618_0652866c",
+    "30618_073f08d1"
+  ],
+  "method": "rigid SE2 fit to official directed polyline, baseline-screened paired GNSS converted to front pivot; inlier cutoff5m; front pivot height subtracts 3 m from antenna chord",
+  "train_inlier_count": 1149,
+  "train_sample_count": 1299,
+  "train_inlier_xy_rmse": 1.039434188199405,
+  "train_inlier_xy_median": 0.24870451007687158,
+  "train_inlier_z_rmse": 0.4560885349422956,
+  "status": "empirical train-only alignment, not an organizer-provided CRS",
+  "antenna_master": [
+    -9.873,
+    0,
+    3.0
+  ],
+  "antenna_rover": [
+    2.563,
+    0,
+    3.0
+  ],
+  "bogie_separation": 7.55
+}

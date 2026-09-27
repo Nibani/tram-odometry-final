@@ -1,0 +1,25 @@
+# Generated files and local data are not part of the source repository.
+__pycache__/
+*.pyc
+*.pyo
+*.nbc
+*.nbi
+build/
+install/
+log/
+.cache/
+*.exe
+*.obj
+*.pdb
+*.db3
+*.mcap
+*.zip
+results/**/*.npz
+results/**/*.csv
+results/**/*.txt
+results/**/*.log
+!requirements*.txt
+.DS_Store
+
+/data/raw/
+/data/unpacked/

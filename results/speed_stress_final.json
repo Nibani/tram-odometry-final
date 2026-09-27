@@ -1,0 +1,247 @@
+{
+  "status": "PASS_STRUCTURAL_CONTROLS_WITH_DECLARED_ACCURACY_FAILURES",
+  "input_frequency_hz": 20.0,
+  "synthetic_speed_unit": "m/s; core feature ABI after configurable raw-wheel normalization",
+  "limitation": "No arbitrary upper accuracy threshold is imposed on ambiguous slip fixtures; actual errors must be reported.",
+  "indistinguishability": "Both ambiguous cases have byte-identical wheel/controller features. Their true velocities differ by1.5m/s after13s. Every estimator must have >=.75m/s absolute error in at least one of these two worlds at each such instant. Startup and pre-anomaly histories are identical.",
+  "rows": [
+    {
+      "scenario": "clean",
+      "implementation": "baseline",
+      "input_sha256": "4d60dba6d56e745abb6090ac0d791a5695533e4a378900c24589a55b0d284f6b",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.0,
+      "mae": 0.0,
+      "max_abs": 0.0,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 72.5,
+        "checksum": 4808
+      }
+    },
+    {
+      "scenario": "front_step",
+      "implementation": "baseline",
+      "input_sha256": "d29f856947a76432ec18f25741535c0f71c99b112264565a803c80b5db73cf78",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.0,
+      "mae": 0.0,
+      "max_abs": 0.0,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 31.9,
+        "checksum": 4808
+      }
+    },
+    {
+      "scenario": "both_step",
+      "implementation": "baseline",
+      "input_sha256": "f5c96989d7082d56ac0b6245e9f89140609d9c16daa3373a20a91668368e3d5d",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 1.073572555847277e-05,
+      "mae": 3.136703689380719e-06,
+      "max_abs": 5.3772063246526614e-05,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 28.8,
+        "checksum": 4808.00056461
+      }
+    },
+    {
+      "scenario": "both_ramp_return",
+      "implementation": "baseline",
+      "input_sha256": "0c174fe22f02cd0ac486ca05a408256ac043ff693948ac6ef80c5dc9d11999e7",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.8205519847848932,
+      "mae": 0.4990369890994347,
+      "max_abs": 1.8858323627708433,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 29.9,
+        "checksum": 4897.82665804
+      }
+    },
+    {
+      "scenario": "both_negative_ramp_return",
+      "implementation": "baseline",
+      "input_sha256": "629ef0c089309fdea203e9ae410ce5920f97e65e76b5819e3f069634c46f5efe",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.821256699370817,
+      "mae": 0.49936555060492693,
+      "max_abs": 1.8902193399840224,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.9,
+        "step_max_us": 29.7,
+        "checksum": 4718.11420089
+      }
+    },
+    {
+      "scenario": "both_smooth_sine",
+      "implementation": "baseline",
+      "input_sha256": "84ec6868d57b1e2e4db86eae29287ce251af5111e1f47b6ea03b22c4fc5b7f65",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.7500000119426354,
+      "mae": 0.5,
+      "max_abs": 1.5,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 30.9,
+        "checksum": 4898
+      }
+    },
+    {
+      "scenario": "both_missing_1s",
+      "implementation": "baseline",
+      "input_sha256": "974a6d187a7680d37c3c2258490e695b9f9b5e66278ad868ab8461b73e5ccb61",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 5.103459985167346e-06,
+      "mae": 1.2095613549472577e-06,
+      "max_abs": 3.110300627007234e-05,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 29.4,
+        "checksum": 4808.00021772
+      }
+    },
+    {
+      "scenario": "rear_missing_whole_run",
+      "implementation": "baseline",
+      "input_sha256": "534becce65bdf24190102a5d23b73c49869600bbf5af0843c1a9a2ba20400322",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.0,
+      "mae": 0.0,
+      "max_abs": 0.0,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 29.1,
+        "checksum": 4808
+      }
+    },
+    {
+      "scenario": "unexpected_real_acceleration",
+      "implementation": "baseline",
+      "input_sha256": "f080d1c6d1773d0471072e3fec7223424d795c8f002473e9382d5b510bda2d75",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 1.5573436344278004e-07,
+      "mae": 7.62939451467067e-08,
+      "max_abs": 3.8146972691777137e-07,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 30.8,
+        "checksum": 5363.75
+      }
+    },
+    {
+      "scenario": "real_accel_then_opposite_slip",
+      "implementation": "baseline",
+      "input_sha256": "810d2980ab7afb804217e6779c5a31eaed2ca93604671317605fbefe14d29775",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.04810831995468671,
+      "mae": 0.014056093641733033,
+      "max_abs": 0.24096029739065017,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 31.4,
+        "checksum": 5366.28008312
+      }
+    },
+    {
+      "scenario": "ambiguous_constant_with_slip",
+      "implementation": "baseline",
+      "input_sha256": "0c174fe22f02cd0ac486ca05a408256ac043ff693948ac6ef80c5dc9d11999e7",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.8205519847848932,
+      "mae": 0.4990369890994347,
+      "max_abs": 1.8858323627708433,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 28.6,
+        "checksum": 4897.82665804
+      }
+    },
+    {
+      "scenario": "ambiguous_real_accel_with_slip",
+      "implementation": "baseline",
+      "input_sha256": "0c174fe22f02cd0ac486ca05a408256ac043ff693948ac6ef80c5dc9d11999e7",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 1.0816237178589359,
+      "mae": 0.8033124389403001,
+      "max_abs": 1.5,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 29.8,
+        "checksum": 4897.82665804
+      }
+    },
+    {
+      "scenario": "nonfinite_wheel",
+      "implementation": "baseline",
+      "input_sha256": "fc721a83bb7a7fb45376a4c8a206ad10fef4f3227747793977f40a62e7940682",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.0,
+      "mae": 0.0,
+      "max_abs": 0.0,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 28.8,
+        "checksum": 4808
+      }
+    },
+    {
+      "scenario": "timestamp_reset",
+      "implementation": "baseline",
+      "input_sha256": "b95694ff19870495985ee6843c68952ac27a4bcc99a5015c8e01c977a78d8b9e",
+      "finite_nonnegative": true,
+      "n": 180,
+      "rmse": 0.0,
+      "mae": 0.0,
+      "max_abs": 0.0,
+      "kernel_timing": {
+        "n": 601,
+        "step_median_us": 0.7,
+        "step_p99_us": 0.8,
+        "step_max_us": 29.8,
+        "checksum": 4808
+      }
+    }
+  ]
+}

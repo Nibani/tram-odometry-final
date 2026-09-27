@@ -1,0 +1,10 @@
+{
+  "length_m": 11036.254598166204,
+  "join_width_each_side_m": 30.0,
+  "method": "zero-roll rigid body on directed closed curve; cubic Hermite terminal joins between TRAIN-only extensions",
+  "uncertainty": "terminal rail connectivity is inferred from training tracks; seam geometry is an approximation, not organizer-surveyed track",
+  "seam_raw_gaps_m": [
+    5.280595344386572,
+    3.0752615786565576
+  ]
+}

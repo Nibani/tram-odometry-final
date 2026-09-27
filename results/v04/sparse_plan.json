@@ -1,0 +1,14 @@
+{
+  "initial_window_s": 3,
+  "master_burst_s": 1,
+  "master_period_s": 120,
+  "master_first_s": 120,
+  "rover_first_s": 60,
+  "rover_period_s": 120,
+  "rover_burst_s": 1,
+  "selection": "all22validation and4exposed audit; no fitting or tuning",
+  "scoring": "legacy paired GNSS geometry, quality and raw; after first3s; distinct from official kinematic checker",
+  "exe_sha256": "17725dd2507633e32eb89edfd13a3b84bad3441cce93f0edd405030998294c6d",
+  "script_sha256": "ba57a888052bb66e18affa8b70469cd95b6ac1519d3f0a3bf7ee45a92805bf44",
+  "split_sha256": "7aa6bde28bbdca14b8cf6bbc0aad2aa3a5f6f8e67fdbac86ec3f901683dfaa29"
+}

@@ -1,0 +1,8 @@
+{
+  "passed": [
+    "clear_route_0_prefix_and_late_gnss",
+    "clear_route_1_prefix_and_late_gnss",
+    "indistinguishable_prefix_different_future_keeps_primary"
+  ],
+  "exe_sha256": "174258d42a04688deeb59d9d12472682c13213c08a7ed02a92c98bcfbf957570"
+}

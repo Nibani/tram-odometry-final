@@ -1,0 +1,405 @@
+{
+  "schema": "checker-harness-score-v1",
+  "predictions": "historical-work/research/competition_v04/checker_core/predictions.txt",
+  "prediction_sha256": "71ea318549132b1fb9604cd450d63b8cbe8e7c2b69277e76403cc72ddf5768bd",
+  "decoded_manifest_sha256": "a59c6b56f1ba40d8ceb1482587884f8eae1d54652c1d3242683f5e66d0d54b89",
+  "harness_sha256": "d99304670c7bf85380c09c170f6058e226080346525cb8cf46cce4254507ee8c",
+  "solution_frame": "map",
+  "calibration_sha256": "df02b978451980fece5e4675ff5bf56e843106062f3e8390d1ad77e9c8a2c654",
+  "sync": {
+    "policy": "ROS2 Humble Python ATS two-stream arrival order",
+    "strict_slop_ns": 50000000,
+    "queue_size": 100,
+    "publication_latency_ms_assumed": 0.0,
+    "arrival_assumption": "Each published output emitted after its linked command callback; no measured ROS/DDS scheduling. Independent reference/result queues for position and velocity.",
+    "source_url": "https://raw.githubusercontent.com/ros2/message_filters/humble/src/message_filters/__init__.py",
+    "queue_overflow": [
+      39246,
+      0
+    ],
+    "duplicate_stamp_overwrites": [
+      0,
+      0
+    ],
+    "remaining_queued": [
+      100,
+      16
+    ],
+    "paired_header_dt_s_quantiles": [
+      -0.046476389,
+      0.013567001,
+      0.0235930108,
+      0.046223518000000005
+    ],
+    "velocity": {
+      "queue_overflow": [
+        39246,
+        0
+      ],
+      "duplicate_stamp_overwrites": [
+        0,
+        0
+      ],
+      "remaining_queued": [
+        100,
+        16
+      ],
+      "paired_header_dt_s_quantiles": [
+        -0.046476389,
+        0.013567001,
+        0.0235930108,
+        0.046223518000000005
+      ]
+    },
+    "position": {
+      "queue_overflow": [
+        39291,
+        0
+      ],
+      "duplicate_stamp_overwrites": [
+        0,
+        0
+      ],
+      "remaining_queued": [
+        100,
+        0
+      ],
+      "paired_header_dt_s_quantiles": [
+        0.003359116,
+        0.013566924000000001,
+        0.023592273400000002,
+        0.043537699000000006
+      ]
+    }
+  },
+  "position_publication": {
+    "absolute_position_only": true,
+    "policy": "suppress flag8 rows before position ATS; velocity always published",
+    "input_rows": 26249,
+    "published": 26188,
+    "uninitialized_intentionally_not_published": 61,
+    "first_published_header_ns": 1788955803608519315,
+    "first_published_assumed_arrival_ns": 1788955803696984281,
+    "first_publish_delay_from_first_command_record_s": 0.303629463,
+    "first_publish_delay_from_first_command_header_s": 3.049990712
+  },
+  "coverage": {
+    "reference_messages": 65579,
+    "command_queries": 26249,
+    "output_messages": 26249,
+    "matched_pairs": 26233,
+    "output_fraction_of_commands": 1.0,
+    "matched_fraction_of_output": 0.9993904529696369,
+    "matched_fraction_of_reference": 0.40002134829747327,
+    "unmatched_output": 16,
+    "unmatched_reference": 39346,
+    "output_initialized": 26188,
+    "output_uninitialized": 61,
+    "velocity_output_messages": 26249,
+    "velocity_matched_pairs": 26233,
+    "position_output_messages": 26188,
+    "position_matched_pairs": 26188,
+    "position_matched_fraction_of_published": 1.0,
+    "position_published_fraction_of_commands": 0.9976761019467408,
+    "position_matched_fraction_of_reference": 0.39933515302154654,
+    "position_unmatched_published": 0,
+    "position_unmatched_reference": 39391
+  },
+  "metrics": {
+    "all": {
+      "pairs": 26233,
+      "velocity_pairs": 26233,
+      "position_pairs": 26188,
+      "velocity_scalar": {
+        "n": 26233,
+        "nonfinite": 0,
+        "rmse": 0.05683832343503348,
+        "max": 0.32360371208955213,
+        "bias": 0.0043798870426778455
+      },
+      "velocity_body_vx": {
+        "n": 26233,
+        "nonfinite": 0,
+        "rmse": 0.06073220429480493,
+        "max": 0.9687144968093566,
+        "bias": 0.0017155462184655346
+      },
+      "position": {
+        "x": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 5.257310099773197,
+          "max": 34.634441786343814,
+          "bias": -1.2297916555124786
+        },
+        "y": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 4.535108825913455,
+          "max": 37.52654047374381,
+          "bias": 0.4864781841457197
+        },
+        "z": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 0.38139372512324093,
+          "max": 1.370232057958333,
+          "bias": -0.13301262137561878
+        },
+        "distance": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 6.953558996774153,
+          "max": 50.99491795588824,
+          "bias": 2.685117107645554
+        }
+      }
+    },
+    "initialized": {
+      "pairs": 26188,
+      "velocity_pairs": 26188,
+      "position_pairs": 26188,
+      "velocity_scalar": {
+        "n": 26188,
+        "nonfinite": 0,
+        "rmse": 0.05688713637864794,
+        "max": 0.32360371208955213,
+        "bias": 0.004387413196523901
+      },
+      "velocity_body_vx": {
+        "n": 26188,
+        "nonfinite": 0,
+        "rmse": 0.06078436131641752,
+        "max": 0.9687144968093566,
+        "bias": 0.0017184941174968069
+      },
+      "position": {
+        "x": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 5.257310099773197,
+          "max": 34.634441786343814,
+          "bias": -1.2297916555124786
+        },
+        "y": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 4.535108825913455,
+          "max": 37.52654047374381,
+          "bias": 0.4864781841457197
+        },
+        "z": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 0.38139372512324093,
+          "max": 1.370232057958333,
+          "bias": -0.13301262137561878
+        },
+        "distance": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 6.953558996774153,
+          "max": 50.99491795588824,
+          "bias": 2.685117107645554
+        }
+      }
+    },
+    "uninitialized": {
+      "pairs": 45,
+      "velocity_pairs": 45,
+      "position_pairs": 0,
+      "velocity_scalar": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "velocity_body_vx": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "position": {
+        "x": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "y": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "z": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "distance": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        }
+      }
+    },
+    "initialization_window_open": {
+      "pairs": 45,
+      "velocity_pairs": 45,
+      "position_pairs": 0,
+      "velocity_scalar": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "velocity_body_vx": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "position": {
+        "x": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "y": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "z": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "distance": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        }
+      }
+    },
+    "first_3_header_seconds": {
+      "pairs": 45,
+      "velocity_pairs": 45,
+      "position_pairs": 0,
+      "velocity_scalar": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "velocity_body_vx": {
+        "n": 45,
+        "nonfinite": 0,
+        "rmse": 0.0,
+        "max": 0.0,
+        "bias": 0.0
+      },
+      "position": {
+        "x": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "y": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "z": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        },
+        "distance": {
+          "n": 0,
+          "nonfinite": 0,
+          "rmse": null,
+          "max": 0.0,
+          "bias": null
+        }
+      }
+    },
+    "after_3_header_seconds": {
+      "pairs": 26188,
+      "velocity_pairs": 26188,
+      "position_pairs": 26188,
+      "velocity_scalar": {
+        "n": 26188,
+        "nonfinite": 0,
+        "rmse": 0.05688713637864794,
+        "max": 0.32360371208955213,
+        "bias": 0.004387413196523901
+      },
+      "velocity_body_vx": {
+        "n": 26188,
+        "nonfinite": 0,
+        "rmse": 0.06078436131641752,
+        "max": 0.9687144968093566,
+        "bias": 0.0017184941174968069
+      },
+      "position": {
+        "x": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 5.257310099773197,
+          "max": 34.634441786343814,
+          "bias": -1.2297916555124786
+        },
+        "y": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 4.535108825913455,
+          "max": 37.52654047374381,
+          "bias": 0.4864781841457197
+        },
+        "z": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 0.38139372512324093,
+          "max": 1.370232057958333,
+          "bias": -0.13301262137561878
+        },
+        "distance": {
+          "n": 26188,
+          "nonfinite": 0,
+          "rmse": 6.953558996774153,
+          "max": 50.99491795588824,
+          "bias": 2.685117107645554
+        }
+      }
+    }
+  },
+  "no_silent_exclusions": "Primary metrics.all includes every matched published output. Optional flag8 position suppression occurs before its independent ATS and is counted explicitly; velocity retains every row. Nonfinite counted per official accumulator."
+}

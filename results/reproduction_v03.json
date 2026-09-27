@@ -1,0 +1,31 @@
+{
+  "status": "FULL_REDECODE_FIXED_CANDIDATE_REPLAY_EXACT",
+  "source_commit": "0481241e5864e974f9f161162875460454566519",
+  "source_bags": 122,
+  "unique_bags": 97,
+  "duplicate_bags": 25,
+  "partition": {
+    "train": 71,
+    "validation": 22,
+    "exposed_audit": 4
+  },
+  "parts": {
+    "validation": {
+      "bags": 22,
+      "outputs": 473162,
+      "all_native_values_exact": true,
+      "metrics_sha256": "88b6d26f015bb95b4cd1e8eebc417e4914ba7d523b4403ae6c11f9bffcf5d752"
+    },
+    "holdout": {
+      "bags": 4,
+      "outputs": 107707,
+      "all_native_values_exact": true,
+      "metrics_sha256": "ada9b7e3d9b5a5acca070e47f7f3a5b1ce4f9ce67ea24b6e06f9a35cd1e40960"
+    }
+  },
+  "exe_sha256": "174258d42a04688deeb59d9d12472682c13213c08a7ed02a92c98bcfbf957570",
+  "map_canonical_lf_sha256": "93dfcca102101600d3347f04d968046d062782e59c43f71931a79873d2a4743f",
+  "scorer_sha256": "de421cffebc75f4dfeabab3df4c71101f2ef8a3536b5e0cf344923001c8d083c",
+  "command": "python scripts/reproduce.py --bags /path/to/data --work /tmp/tram-evaluation --exe /path/to/pipeline_cli",
+  "limits": "Previously exposed audit; Windows native numerical run. Actual ROS evidence is separate CI."
+}

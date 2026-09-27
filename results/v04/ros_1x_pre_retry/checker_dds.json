@@ -1,0 +1,435 @@
+{
+  "status": "PASS",
+  "fixture": {
+    "fixture_sha256": "4b19eb069b3dd32f8579fbf36a500a98240f1a6f4664c9cde2d6e76690782a2b",
+    "provenance": {
+      "source_bag_sha256": "48f846d134d0584b38f9ca06b7ba812a16aeeecc896594313e3fa9acd27e10c3",
+      "fixture_sha256": "4b19eb069b3dd32f8579fbf36a500a98240f1a6f4664c9cde2d6e76690782a2b",
+      "inputs": "original wheel/controller/fix messages, all header/arrival/id timestamps and data; no velocity GNSS subscribed",
+      "reference": "separate evaluation-only original position/quaternion/linear/angular fields; covariance omitted because scorer ignores it",
+      "reference_columns": [
+        "x",
+        "y",
+        "z",
+        "qx",
+        "qy",
+        "qz",
+        "qw",
+        "vx",
+        "vy",
+        "vz",
+        "wx",
+        "wy",
+        "wz"
+      ],
+      "counts": {
+        "front_ht": 12216,
+        "rear_ht": 12225,
+        "cmd_ht": 26249,
+        "master_fix_ht": 438,
+        "rover_fix_ht": 435,
+        "reference_ht": 65579
+      },
+      "publication": "Private CI fixture derived from user-supplied organizer example; not estimator input or model training data"
+    },
+    "counts": {
+      "front": 12216,
+      "rear": 12225,
+      "cmd": 26249,
+      "master_fix": 438,
+      "rover_fix": 435,
+      "reference": 65579
+    },
+    "allowed_input_events": 51563,
+    "reference_events": 65579,
+    "merged_events": 117142,
+    "first_record_ns": 1788955803379285792,
+    "last_record_ns": 1788957112970600537,
+    "duration_s": 1309.591314745,
+    "order": "Original SQLite ORDER BY timestamp,id; header order unchanged",
+    "reconstructed_frames": "reference map/base_link; sensor frames descriptive only",
+    "omitted_fields": "reference covariance and original frame strings are absent from fixture; official metrics ignores them"
+  },
+  "assertions": [
+    {
+      "name": "DDS_endpoints_ready",
+      "passed": true,
+      "evidence": {
+        "front": 1,
+        "rear": 1,
+        "cmd": 1,
+        "master_fix": 1,
+        "rover_fix": 1,
+        "reference": 3
+      }
+    },
+    {
+      "name": "reference_is_not_an_estimator_subscription",
+      "passed": true,
+      "evidence": {
+        "/vehicle/front_bogie_velocity": [
+          {
+            "name": "reserve_odometry",
+            "namespace": "/"
+          }
+        ],
+        "/localization/kinematic_state": [
+          {
+            "name": "hackathon_solution_checker",
+            "namespace": "/"
+          },
+          {
+            "name": "hackathon_solution_checker",
+            "namespace": "/"
+          },
+          {
+            "name": "checker_dds_replay",
+            "namespace": "/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "all_original_fixture_events_published",
+      "passed": true,
+      "evidence": {
+        "front": 12216,
+        "rear": 12225,
+        "cmd": 26249,
+        "master_fix": 438,
+        "rover_fix": 435,
+        "reference": 65579
+      }
+    },
+    {
+      "name": "reference_transport_coverage",
+      "passed": true,
+      "evidence": {
+        "received": 65579,
+        "expected": 65579
+      }
+    },
+    {
+      "name": "nontrivial_velocity_output_and_real_ATS_pairs",
+      "passed": true,
+      "evidence": {
+        "outputs": 26193,
+        "pairs": 26193
+      }
+    },
+    {
+      "name": "nontrivial_position_output_and_real_ATS_pairs",
+      "passed": true,
+      "evidence": {
+        "outputs": 26168,
+        "pairs": 26168
+      }
+    },
+    {
+      "name": "finite_result_velocities",
+      "passed": true,
+      "evidence": 26193
+    },
+    {
+      "name": "absolute_map_positions_only",
+      "passed": true,
+      "evidence": 26168
+    },
+    {
+      "name": "finite_result_pose_and_body_velocity",
+      "passed": true,
+      "evidence": 26168
+    },
+    {
+      "name": "monotonic_result_stamps",
+      "passed": true,
+      "evidence": [
+        26193,
+        26168
+      ]
+    },
+    {
+      "name": "reference_isolation_preserved_after_replay",
+      "passed": true,
+      "evidence": {
+        "/vehicle/front_bogie_velocity": [
+          {
+            "name": "reserve_odometry",
+            "namespace": "/"
+          }
+        ],
+        "/localization/kinematic_state": [
+          {
+            "name": "hackathon_solution_checker",
+            "namespace": "/"
+          },
+          {
+            "name": "hackathon_solution_checker",
+            "namespace": "/"
+          },
+          {
+            "name": "checker_dds_replay",
+            "namespace": "/"
+          }
+        ]
+      }
+    },
+    {
+      "name": "velocity_latency_measurement_coverage",
+      "passed": true,
+      "evidence": {
+        "measured": 26192,
+        "outputs": 26193
+      }
+    },
+    {
+      "name": "velocity_latency_p99_below_100ms",
+      "passed": true,
+      "evidence": 0.0028000322300000004
+    },
+    {
+      "name": "velocity_latency_max_below_250ms",
+      "passed": true,
+      "evidence": 0.008891661
+    },
+    {
+      "name": "velocity_publication_at_least_10Hz",
+      "passed": true,
+      "evidence": 20.00031668789475
+    },
+    {
+      "name": "position_latency_measurement_coverage",
+      "passed": true,
+      "evidence": {
+        "measured": 26168,
+        "outputs": 26168
+      }
+    },
+    {
+      "name": "position_latency_p99_below_100ms",
+      "passed": true,
+      "evidence": 0.003369629719999945
+    },
+    {
+      "name": "position_latency_max_below_250ms",
+      "passed": true,
+      "evidence": 0.00914853
+    },
+    {
+      "name": "position_publication_at_least_10Hz",
+      "passed": true,
+      "evidence": 20.00000041357436
+    },
+    {
+      "name": "node_resource_measurement_present",
+      "passed": true,
+      "evidence": {
+        "sampling_wall_s": 1.0,
+        "samples": 1306,
+        "peak_sampled_rss_kib": 25720,
+        "affinity_cores": 2,
+        "mean_cpu_cores": 0.023212840658346633,
+        "cpu_observation_wall_s": 1309.189187454,
+        "caveat": "One-second sampled node RSS; launch/checker memory excluded; sampled peak is not an absolute allocation peak"
+      }
+    },
+    {
+      "name": "sampled_node_memory_below_512MiB",
+      "passed": true,
+      "evidence": 25720
+    },
+    {
+      "name": "node_mean_cpu_below_two_cores",
+      "passed": true,
+      "evidence": 0.023212840658346633
+    },
+    {
+      "name": "node_affinity_at_most_two_cores",
+      "passed": true,
+      "evidence": 2
+    }
+  ],
+  "interpretation": "Actual DDS/official ATS measurement; no rank or unseen-data claim",
+  "publication_policy": "Private CI fixture; reference never enters estimator inputs",
+  "installed_sources": {
+    "launch/odometry.launch.py": "827479868d45234f09413993eb5773d0ffabedf408aef9b825e8b46ba363aa1f",
+    "config/map_calibration.json": "de0195e51361f137ae1930062a82a8eb8e7162756b0177fc0e48ce8972c75c40",
+    "config/route_loop.csv": "6ee15c70018210cf0e1474fddffd33bb6f460a93bb65bdccae16e7247d984ba0",
+    "config/route_hairpin_hypothesis.csv": "93dfcca102101600d3347f04d968046d062782e59c43f71931a79873d2a4743f"
+  },
+  "installed_binary_sha256": "541f0d80f4bac44852a1708b31901723f432b324dfd113422e71d0bdf7fb1911",
+  "ci_commit": "5c5765c7923489ba22b9e26f6541241107135616",
+  "official_metrics_sha256": "3f6e46923ad431d7ae4f811ff144cbca00c572a1631277dcaa3659cdf8e7a058",
+  "message_filters_ats_sha256": "a35bd28cee66c43356d07a4fceebfe419b0ab4c9adfc236b1580754d5e8c4aa3",
+  "python": "3.10.12",
+  "estimator_command": [
+    "ros2",
+    "launch",
+    "reserve_odometry",
+    "odometry.launch.py",
+    "use_sim_time:=true"
+  ],
+  "sync": {
+    "engine": "unmodified official MetricsNode and installed message_filters ATS",
+    "tolerance_s": 0.05,
+    "queue_size": 100,
+    "reference_field": "twist.twist.linear.x",
+    "result_field": "velocity",
+    "arrival_policy": "Actual independent DDS subscribers; no assumed output publication delay"
+  },
+  "subscription_graph": {
+    "/vehicle/front_bogie_velocity": [
+      {
+        "name": "reserve_odometry",
+        "namespace": "/"
+      }
+    ],
+    "/localization/kinematic_state": [
+      {
+        "name": "hackathon_solution_checker",
+        "namespace": "/"
+      },
+      {
+        "name": "hackathon_solution_checker",
+        "namespace": "/"
+      },
+      {
+        "name": "checker_dds_replay",
+        "namespace": "/"
+      }
+    ]
+  },
+  "official_metrics": {
+    "velocity": {
+      "n": 26193,
+      "rmse": 0.05685690013079089,
+      "max": 0.32360371208955213
+    },
+    "position": {
+      "x": {
+        "n": 26168,
+        "rmse": 4.46872101803763,
+        "max": 27.608554420177825
+      },
+      "y": {
+        "n": 26168,
+        "rmse": 4.156695918419162,
+        "max": 33.178171488878434
+      },
+      "z": {
+        "n": 26168,
+        "rmse": 0.39238407260342745,
+        "max": 1.3850467017179824
+      },
+      "distance": {
+        "n": 26168,
+        "rmse": 6.115680972360017,
+        "max": 43.0880268952709
+      }
+    }
+  },
+  "coverage": {
+    "input_events_published": {
+      "front": 12216,
+      "rear": 12225,
+      "cmd": 26249,
+      "master_fix": 438,
+      "rover_fix": 435,
+      "reference": 65579
+    },
+    "reference_received": 65579,
+    "velocity_outputs": 26193,
+    "position_outputs": 26168,
+    "velocity_pairs": 26193,
+    "position_pairs": 26168,
+    "velocity_pair_fraction_of_output": 1.0,
+    "position_pair_fraction_of_output": 1.0
+  },
+  "first_position": {
+    "header_ns": 1788955804608576452,
+    "received_clock_ns": 1788955804609854040,
+    "relative_to_first_record_s": 1.230568248,
+    "relative_to_first_command_header_s": 4.050047849,
+    "frame": "map",
+    "xyz": [
+      103634.68273210793,
+      86056.38359848209,
+      165.41691787916272
+    ]
+  },
+  "replay": {
+    "requested_rate": 1.0,
+    "clock_hz_minimum": 100.0,
+    "clock_publications": 248101,
+    "simulated_duration_s": 1309.591314745,
+    "wall_elapsed_s": 1311.117791986,
+    "playback_wall_s": 1309.592360518,
+    "schedule_lateness_wall_s": {
+      "min": 7.129999630706152e-07,
+      "median": 0.00018277249998277512,
+      "p95": 0.0010050756500049815,
+      "p99": 0.0015515486599713313,
+      "max": 0.011946773999852667
+    },
+    "achieved_rate": 0.9999992014515116,
+    "ordering_scope": "Publication order is exact; receiver callback order and output delays are measured DDS behavior."
+  },
+  "velocity_output_header_gap_s": {
+    "min": 0.029286864000000003,
+    "median": 0.049999805,
+    "p95": 0.05010056385,
+    "p99": 0.05024235254,
+    "max": 0.051401341
+  },
+  "command_to_result_latency_wall_s": {
+    "definition": "Before command publisher.publish to result subscriber callback, matched by exact header; includes DDS and checker executor scheduling at requested replay rate",
+    "velocity": {
+      "min": 0.0005682850000000001,
+      "median": 0.001593397,
+      "p95": 0.00197812315,
+      "p99": 0.0028000322300000004,
+      "max": 0.008891661
+    },
+    "position": {
+      "min": 0.00082709,
+      "median": 0.0017564965000000001,
+      "p95": 0.002831304149999999,
+      "p99": 0.003369629719999945,
+      "max": 0.00914853
+    },
+    "velocity_n": 26192,
+    "position_n": 26168
+  },
+  "node_resources": {
+    "sampling_wall_s": 1.0,
+    "samples": 1306,
+    "peak_sampled_rss_kib": 25720,
+    "affinity_cores": 2,
+    "mean_cpu_cores": 0.023212840658346633,
+    "cpu_observation_wall_s": 1309.189187454,
+    "caveat": "One-second sampled node RSS; launch/checker memory excluded; sampled peak is not an absolute allocation peak"
+  },
+  "position_output_header_gap_s": {
+    "min": 0.048689060000000006,
+    "median": 0.049999805,
+    "p95": 0.050100592,
+    "p99": 0.050242554040000005,
+    "max": 0.051401341
+  },
+  "velocity_pair_abs_header_delta_s": {
+    "min": 0.003359116,
+    "median": 0.013565780000000001,
+    "p95": 0.023592185800000002,
+    "p99": 0.023640486,
+    "max": 0.043601847000000006
+  },
+  "position_pair_abs_header_delta_s": {
+    "min": 0.003359116,
+    "median": 0.013564533,
+    "p95": 0.02359165665,
+    "p99": 0.02363869521,
+    "max": 0.033545017
+  },
+  "velocity_output_hz_in_header_time": 20.00031668789475,
+  "position_output_hz_in_header_time": 20.00000041357436
+}

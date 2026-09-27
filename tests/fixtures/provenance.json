@@ -1,0 +1,30 @@
+{
+  "source_bag_sha256": "48f846d134d0584b38f9ca06b7ba812a16aeeecc896594313e3fa9acd27e10c3",
+  "fixture_sha256": "4b19eb069b3dd32f8579fbf36a500a98240f1a6f4664c9cde2d6e76690782a2b",
+  "inputs": "original wheel/controller/fix messages, all header/arrival/id timestamps and data; no velocity GNSS subscribed",
+  "reference": "separate evaluation-only original position/quaternion/linear/angular fields; covariance omitted because scorer ignores it",
+  "reference_columns": [
+    "x",
+    "y",
+    "z",
+    "qx",
+    "qy",
+    "qz",
+    "qw",
+    "vx",
+    "vy",
+    "vz",
+    "wx",
+    "wy",
+    "wz"
+  ],
+  "counts": {
+    "front_ht": 12216,
+    "rear_ht": 12225,
+    "cmd_ht": 26249,
+    "master_fix_ht": 438,
+    "rover_fix_ht": 435,
+    "reference_ht": 65579
+  },
+  "publication": "Private CI fixture derived from user-supplied organizer example; not estimator input or model training data"
+}

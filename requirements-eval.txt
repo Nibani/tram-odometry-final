@@ -1,0 +1,3 @@
+# Offline numerical evaluation only. ROS C++ runtime has no NumPy dependency.
+# Tested: Python3.12.14 / NumPy2.3.5 on Windows; Python3.10 / Ubuntu NumPy in CI.
+numpy>=1.21,<3

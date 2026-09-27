@@ -1,0 +1,8 @@
+{
+  "run": 36317720464,
+  "url": "https://github.com/Nibani/tram-reserve-odometry/actions/runs/36317720464",
+  "commit": "ba02372d7f859b3d1676a4a241cd529fc3529509",
+  "status": "success",
+  "artifact_sha256": "c34b2420abfaef48003b69019e20826370259bee74fce5c57befb8124e9840b8",
+  "scope": "Final runtime with XY100, repeated dual-GNSS initialization and startup clock grace"
+}
